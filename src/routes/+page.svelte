@@ -1,6 +1,8 @@
 <script>
   export let data
-  console.log(data)
+  import Home from './home/+page.svelte'
+
 </script>
 
-<h1>hallo</h1>
+<Home data={data}/>
+
