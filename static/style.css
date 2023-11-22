@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #4E7141;
+  --background-color-light: #F9E9C2;
+  --button-color: #FF8D06;
+  --card-color-dark: #491B02;
+  --card-color-light: #FFD9B8;
+}
+
