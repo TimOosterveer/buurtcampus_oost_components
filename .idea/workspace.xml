@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34775548-75e7-4f2a-9575-0605f17cfa5a" name="Changes" comment="" />
+    <list default="true" id="34775548-75e7-4f2a-9575-0605f17cfa5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/atoms/Carousel.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/home/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/home/+page.svelte" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,10 +40,22 @@
       <updated>1700690237823</updated>
       <workItem from="1700690242280" duration="34000" />
       <workItem from="1700690439633" duration="259000" />
+      <workItem from="1700691177551" duration="297000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
