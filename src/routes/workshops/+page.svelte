@@ -1,5 +1,8 @@
 <script>
-  import WorkshopCard from '$lib/organisms/Workshop_card.svelte'
+  export let data;
+  import Info from '$lib/organisms/InfoWorkshop.svelte'
+  import Card from '$lib/organisms/OverviewWorkshops.svelte'
 </script>
 
-<WorkshopCard />
+<Info/>
+<Card data={data}/>
