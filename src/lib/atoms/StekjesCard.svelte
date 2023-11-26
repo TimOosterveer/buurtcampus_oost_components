@@ -18,10 +18,10 @@
 	article{
 		overflow: hidden;
 		flex-direction: column;
-		width: 15rem;
-		height: 24rem;
-		padding: 1rem;
-		border-radius: 0.8rem;
+		width: 13rem;
+		height: 22rem;
+		padding: 1.5rem;
+		border-radius: 1rem;
 	}
 
 	article h3{
@@ -34,7 +34,6 @@
 		background-color: orange;
 		padding: 0.5rem;
 		border-radius: 1rem;
-		
 	}
 
 	 article img{
