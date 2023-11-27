@@ -6,7 +6,6 @@
 			
 			
 				<article class={data.stekjes[0].categories[0].naam}>
-					<div class="blur"></div>
 						<h3>{data.stekjes[0].naam}</h3>
 						<p><a href={data.stekjes[0].slug}>Bekijk stekje</a></p>
 					<img src={data.stekjes[0].fotos[0].url} alt="data.stekjes[0].naam" />
