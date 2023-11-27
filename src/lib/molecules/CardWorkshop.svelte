@@ -1,38 +1,58 @@
 <script>
 	export let data;
-	console.log(data);
+	import Background from '$lib/atoms/ImageWorkshop.svelte';
+	import Button from '$lib/atoms/ButtonWorkshop.svelte'
 </script>
 
 {#each data.workshops as workshop}
 	<section>
-		<img src={workshop.foto[0].url} alt="" />
+		<Background workshop={workshop}/>
 
 		<h2>{workshop.naam}</h2>
+
+		<ul>
+			<li><i class="fa-solid fa-location-crosshairs" style="color: #ffffff;"></i>{workshop.locatie}</li>
+			<li><i class="fa-solid fa-sack-dollar" style="color: #ffffff;"></i>{workshop.kosten}</li>
+			<li><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>{workshop.datum}</li>
+		</ul>
+
+		<Button />
 	</section>
 {/each}
 
 <style>
 	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		position: relative;
 		border-radius: var(--bradius);
 		height: 40rem;
-    margin: var(--margin);
+		margin: var(--margin);
+		padding: var(--padding);
+		overflow: hidden;
+		position: sticky;
+		top: 2rem;
+	}
+	section::after {
+		content: '';
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.475);
+		z-index: -1;
+		inset: 0;
+	}
+	h2 {
+		color: white;
+		font-size: 32px;
 	}
 
-  
-	img {
-    position: absolute;
-    border-radius: var(--bradius);
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  h2 {
-    color: white;
-  }
+	ul {
+		color: white;
+		list-style: none;
+		font-size: 20px;
+	}
 
+	i {
+		margin-right: 1rem;
+	}
 </style>

@@ -17,6 +17,7 @@
 		<img id="two" src={VectorPlant} alt="incon plant" />
 		<img id="three" src={VectorPlant} alt="incon plant" />
 	</div>
+
 </div>
 
 <style>
