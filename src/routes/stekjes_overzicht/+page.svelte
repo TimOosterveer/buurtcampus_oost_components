@@ -1,11 +1,11 @@
 <script>
     import StekjeCard from '$lib/atoms/StekjesCard.svelte'
-    import StekjesHeader from '$lib/organisms/Header.svelte'
+    import Header from '$lib/organisms/Header.svelte'
     export let data
 </script>
 
 
-<StekjesHeader></StekjesHeader>
+<Header></Header>
 
 <!-- hier komt nog tekst -->
 <main>
