@@ -1,39 +1,41 @@
 <script>
  export let data;   
 </script>
-
+                                               
 
 			
-			{#each data.stekjes as stekje}
-				<article class={stekje.categories[0].naam}>
-						<h3>{stekje.naam}</h3>
-						<p><a href={stekje.slug}>Bekijk stekje</a></p>
-					<img src={stekje.fotos[0].url} alt="foto van {stekje.naam}" />
-				</article>
-	        {/each}
+			
+				<article class={data.stekjes[0].categories[0].naam}>
+					<div class="blur"></div>
+						<h3>{data.stekjes[0].naam}</h3>
+						<p><a href={data.stekjes[0].slug}>Bekijk stekje</a></p>
+					<img src={data.stekjes[0].fotos[0].url} alt="data.stekjes[0].naam" />
+				</article>                                                                                                                                                                                                                                                                                                                                                           
 
 
 <style>
 
 	article{
 		overflow: hidden;
-		flex-direction: column;
 		width: 13rem;
 		height: 22rem;
 		padding: 1.5rem;
 		border-radius: 1rem;
 	}
 
+
 	article h3{
 		color: white;
 	}
 
 	article a{
+		position: relative;
 		color: white;
 		text-decoration: none;
 		background-color: orange;
-		padding: 0.5rem;
+		padding: 0.4rem;
 		border-radius: 1rem;
+		top: 15.5rem;
 	}
 
 	 article img{
@@ -42,7 +44,7 @@
 		left: -2rem;
 		width: 18rem;
 		height: 30rem;
-		z-index: -1;
+		z-index: -2;
 	 }
 
 

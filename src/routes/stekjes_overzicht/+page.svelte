@@ -3,4 +3,6 @@
     export let data
 </script>
 
+{#each data.stekjes as stekje}
 <StekjeCard data={data}></StekjeCard>
+{/each}
