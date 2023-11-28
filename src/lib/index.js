@@ -9,6 +9,16 @@ export { default as MobileMenu } from '$lib/organisms/MobileMenu.svelte'
 export { default as HeaderStekje } from '$lib/molecules/ImageOverzicht.svelte'
 export { default as StekjeCard } from '$lib/atoms/StekjesCard.svelte'
 
+export { default as HeaderKast } from '$lib/atoms/KastImage.svelte'
+export { default as IntroKast } from '$lib/organisms/IntroKast.svelte'
+export { default as TheMaking } from '$lib/organisms/TheMaking.svelte'
+export { default as TheMaking2 } from '$lib/organisms/TheMaking2.svelte'
+export { default as TheMaking3} from '$lib/organisms/TheMaking3.svelte'
+export { default as TheMaking4} from '$lib/organisms/TheMaking4.svelte'
+
+
+
+
 
 
 

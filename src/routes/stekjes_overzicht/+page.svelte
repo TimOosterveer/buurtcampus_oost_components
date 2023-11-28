@@ -5,13 +5,12 @@
 
 <NavDark />
 <MobileMenu />
-
 <HeaderStekje {data} />
 
 <!-- hier komt nog tekst -->
 <main>
 	{#each data.stekjes as stekje}
-		<StekjeCard {data}></StekjeCard>
+		<StekjeCard {data} />
 	{/each}
 	<!-- <StekjesCard data={data}/> -->
 </main>
@@ -19,16 +18,12 @@
 <Footer />
 
 <style>
-	/* header {
-		margin-bottom: 5rem;
-	} */
-
 	main {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		/* justify-content: center; */
-		gap: 1rem 1.5rem;
-		margin: 2rem;
+		gap: 1rem;
+		margin: var(--margin);
 	}
 </style>
