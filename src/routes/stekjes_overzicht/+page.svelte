@@ -1,30 +1,22 @@
 <script>
-	import Header from '$lib/molecules/ImageOverzicht.svelte'
-	import StekjeCard from '$lib/atoms/StekjesCard.svelte';
-	import Footer from '$lib/organisms/Footer.svelte';
-	import Navigation from '$lib/organisms/NavDark.svelte';
-	import MobileNavigation from '$lib/organisms/MobileMenu.svelte';
-	import StekjesCard from '../../lib/atoms/StekjesCard.svelte';
 	export let data;
+	import { HeaderStekje, Footer, NavDark, MobileMenu, StekjeCard } from '$lib/index.js';
 </script>
 
-<header>
-	<Navigation></Navigation>
-	<MobileNavigation></MobileNavigation>
-</header>
+<NavDark />
+<MobileMenu />
 
-<Header data={data}/>
-
+<HeaderStekje {data} />
 
 <!-- hier komt nog tekst -->
 <main>
 	{#each data.stekjes as stekje}
 		<StekjeCard {data}></StekjeCard>
 	{/each}
-<!-- <StekjesCard data={data}/> -->
+	<!-- <StekjesCard data={data}/> -->
 </main>
 
-<Footer></Footer>
+<Footer />
 
 <style>
 	/* header {
@@ -35,7 +27,7 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
+		/* justify-content: center; */
 		gap: 1rem 1.5rem;
 		margin: 2rem;
 	}

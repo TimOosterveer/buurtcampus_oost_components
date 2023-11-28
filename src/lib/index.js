@@ -6,6 +6,14 @@ export { default as Footer } from '$lib/organisms/Footer.svelte'
 export { default as NavDark } from '$lib/organisms/NavDark.svelte'
 export { default as MobileMenu } from '$lib/organisms/MobileMenu.svelte'
 
+export { default as HeaderStekje } from '$lib/molecules/ImageOverzicht.svelte'
+export { default as StekjeCard } from '$lib/atoms/StekjesCard.svelte'
+
+
+
+
+
+
 
 
 
