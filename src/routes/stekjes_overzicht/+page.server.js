@@ -19,6 +19,11 @@ export async function load() {
 					naam
 				}
 			}
+			stekjesHeaders {
+				image {
+					url
+				}
+			}
 		}
 	`;
 
