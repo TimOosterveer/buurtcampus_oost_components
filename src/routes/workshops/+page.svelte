@@ -1,5 +1,7 @@
 <script>
   export let data;
+
+  import Header from '$lib/molecules/HeaderImage.svelte'
   import Info from '$lib/organisms/InfoWorkshop.svelte'
   import Card from '$lib/organisms/OverviewWorkshops.svelte'
   import Footer from '../../lib/organisms/Footer.svelte';
@@ -9,6 +11,8 @@
 
 <NavDark />
 <MobileMenu />
+
+<Header data={data}/>
 <Info/>
 <Card data={data}/>
 
