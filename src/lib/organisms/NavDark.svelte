@@ -2,7 +2,7 @@
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { onMount } from 'svelte';
-	import HeaderDef from './HeaderDef.svelte';
+	// import HeaderDef from './HeaderDef.svelte';
 
 	gsap.registerPlugin(ScrollTrigger);
 
