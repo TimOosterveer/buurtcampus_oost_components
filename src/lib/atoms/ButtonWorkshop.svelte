@@ -43,4 +43,12 @@
 		transform: translateY(4px) scale(0.9);
 		fill: var(--text-color);
 	}
-</style>
+
+	/* @media screen and (max-width: 767px) {
+		button {
+			position: 0;
+		}
+	} 
+
+	*/
+</style> 

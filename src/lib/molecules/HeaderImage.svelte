@@ -45,7 +45,7 @@ img {
 
 h1 {
   color: white;
-  font-size: 6rem;
+  font-size: 6vw;
   z-index: 2;
 }
 </style>

@@ -25,13 +25,10 @@
 		position: relative;
 		display: flex;
 		gap: var(--padding);
-
 		background-color: var(--background-color-light);
-
 		border-radius: var(--bradius);
-
 		height: 15rem;
-		margin: var(--margin);
+		margin: var(--margin) var(--margin) 0 var(--margin);
 		padding: var(--padding);
 
 		overflow: hidden;
@@ -59,4 +56,23 @@
 		right: -7rem;
 		transform: rotate(-10deg);
 	}
+
+	@media screen and (max-width: 767px) {
+		.info-workshop {
+			width: 100%;
+			margin: 0;
+			margin-top: 2rem;
+			padding: 1rem;
+			height: 100%;
+		}
+
+		.vector img {
+			width: 30px;
+		}
+
+		.info-paragraph {
+			width: 100%;
+		}
+
+	} 
 </style>
