@@ -1,31 +1,26 @@
 <script>
-	import StekjeCard from '$lib/atoms/StekjesCard.svelte';
-	import Footer from '$lib/organisms/Footer.svelte';
-	import Navigation from '$lib/organisms/NavDark.svelte';
-	import MobileNavigation from '$lib/organisms/MobileMenu.svelte';
 	export let data;
+	import { HeaderStekje, Footer, NavDark, MobileMenu, StekjeCard } from '$lib/index.js';
 </script>
 
-<header>
-	<Navigation></Navigation>
-	<MobileNavigation></MobileNavigation>
-</header>
-
+<NavDark />
+<MobileMenu />
+<HeaderStekje {data} />
 
 <main>
 	<div class="intro">
 		<!-- hier komt nog echte tekst -->
 	</div>
 	{#each data.stekjes as stekje}
-		<StekjeCard {data}></StekjeCard>
+		<StekjeCard {data} />
 	{/each}
+	<!-- <StekjesCard data={data}/> -->
 </main>
 
-<Footer></Footer>
+<Footer />
 
 <style>
-
-	.intro{
+	.intro {
 		width: 13rem;
 		height: 22rem;
 		background-color: var(--card-color-light);
