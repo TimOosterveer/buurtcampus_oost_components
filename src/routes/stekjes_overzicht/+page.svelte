@@ -1,6 +1,7 @@
 <script>
     import StekjeCard from '$lib/atoms/StekjesCard.svelte'
     import Header from '$lib/organisms/Header.svelte'
+     import Footer from '$lib/organisms/Footer.svelte'
     export let data
 </script>
 
@@ -14,8 +15,7 @@
 {/each}
 </main>
 
-<!-- footer -->
-
+<Footer></Footer>
 <style>
 
  main{
@@ -23,5 +23,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem 1.5rem;
+    margin-bottom: 5rem;
  }
 </style>
