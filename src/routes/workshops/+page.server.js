@@ -9,8 +9,13 @@ export async function load() {
       locatie
       kosten
       id
-      datum
       foto {
+        url
+      }
+      datum
+    }
+    workshopHeaders {
+      image {
         url
       }
     }

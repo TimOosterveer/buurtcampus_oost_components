@@ -1,6 +1,5 @@
 <header>
 	
-
 	<ul id="links">
 		<a href="/">Home</a>
 		<a href="/all_stekjes">Stekjes</a>
@@ -18,8 +17,8 @@
 
 			<div class="toggle">
 				<ul id="menu">
-					<a href="/">Home</a>
-					<a href="/all_stekjes">Stekjes</a>
+					<a href="/home">Home</a>
+					<a href="/stekjes_overzicht">Stekjes</a>
 					<a href="/workshops">Workshops</a>
 					<a href="/contact">Contact</a>
 				</ul>
