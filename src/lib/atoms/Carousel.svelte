@@ -30,7 +30,9 @@
     });
 </script>
 
+<main>
 <div class="carrousel" aria-label="Carousel">
+    <h1>Swap nu je stekjes!</h1>
     <div class="carrousel-a">
         <div class="carrousel-picture"><img src="src/lib/assets/carousel-img-1.jpg" alt="Slide 1"
                                             aria-label="carousel-image-1"></div>
@@ -40,10 +42,29 @@
                                             aria-label="carousel-image-3"></div>
     </div>
 </div>
+</main>
 
 <style>
+
+    main {
+        background-color: var(--background-color);
+    }
+
     .carrousel {
         width: 100%;
+    }
+
+    .carrousel h1 {
+        position: absolute;
+        z-index: 1;
+        width: 60%;
+        color: var(--text-color);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 35%;
+        left: 20%;
     }
 
     .carrousel img {
@@ -60,12 +81,35 @@
         scrollbar-width: none;
     }
 
-    .carrousel-a::-webkit-scrollbar { display: none; }
+    .carrousel-a::-webkit-scrollbar {
+        display: none;
+    }
 
     .carrousel-picture {
         flex-grow: 0;
         flex-shrink: 0;
         flex-basis: 100%;
         scroll-snap-align: center;
+    }
+
+    /* MEDIA QUERY TABLET*/
+    @media screen and (min-width: 48rem) {
+
+        .carrousel h1 {
+            width: 50%;
+            height: 45%;
+            left: 25%;
+            font-size: 3rem;
+        }
+    }
+
+    /* MEDIA QUERY DESKTOP */
+    @media screen and (min-width: 64rem) {
+        .carrousel h1 {
+            width: 25rem;
+            height: 100%;
+            left: 38%;
+            font-size: 5rem;
+        }
     }
 </style>
