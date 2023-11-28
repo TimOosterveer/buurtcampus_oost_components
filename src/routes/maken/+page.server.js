@@ -3,23 +3,8 @@ import { hygraph } from '$lib/utils/hygraph.js';
 
 export async function load() {
 	let query = gql`
-		query Assets {
-			stekjes {
-				aanmelddatum
-				beschrijving
-				fotos {
-					url
-				}
-				naam
-				slug
-				landvanherkomst
-				zonlicht
-				watergeven
-				categories {
-					naam
-				}
-			}
-			stekjesHeaders {
+		query MyQuery {
+			kastHeaders {
 				image {
 					url
 				}

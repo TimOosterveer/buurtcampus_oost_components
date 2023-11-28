@@ -1,20 +1,19 @@
 <script>
- export let data;   
+	import Button from "$lib/atoms/ButtonStekje.svelte"
+	export let data;
 </script>
-                                               
 
-			
-			
-				<article class={data.stekjes[0].categories[0].naam}>
-						<h3>{data.stekjes[0].naam}</h3>
-						<p><a href={data.stekjes[0].slug}>Bekijk stekje</a></p>
-					<img src={data.stekjes[0].fotos[0].url} alt="data.stekjes[0].naam" />
-				</article>                                                                                                                                                                                                                                                                                                                                                           
+
+<article class={data.stekjes[0].categories[0].naam}>
+	<h3>{data.stekjes[0].naam}</h3>
+	<p><a href={data.stekjes.slug}>Bekijk stekje</a></p>
+	<img src={data.stekjes[0].fotos[0].url} alt="data.stekjes[0].naam" />
+</article>
+
 
 
 <style>
-
-	article{
+	article {
 		overflow: hidden;
 		width: 13rem;
 		height: 22rem;
@@ -22,12 +21,11 @@
 		border-radius: 1rem;
 	}
 
-
-	article h3{
+	article h3 {
 		color: white;
 	}
 
-	article a{
+	article a {
 		position: relative;
 		color: white;
 		text-decoration: none;
@@ -37,14 +35,12 @@
 		top: 15.5rem;
 	}
 
-	 article img{
+	article img {
 		position: relative;
 		top: -10rem;
 		left: -2rem;
 		width: 18rem;
 		height: 30rem;
 		z-index: -2;
-	 }
-
-
+	}
 </style>
