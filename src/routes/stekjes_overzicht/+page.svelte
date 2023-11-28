@@ -11,8 +11,11 @@
 	<MobileNavigation></MobileNavigation>
 </header>
 
-<!-- hier komt nog tekst -->
+
 <main>
+	<div class="intro">
+		<!-- hier komt nog echte tekst -->
+	</div>
 	{#each data.stekjes as stekje}
 		<StekjeCard {data}></StekjeCard>
 	{/each}
@@ -21,6 +24,13 @@
 <Footer></Footer>
 
 <style>
+
+	.intro{
+		width: 13rem;
+		height: 22rem;
+		background-color: var(--card-color-light);
+		border-radius: var(--bradius);
+	}
 	header {
 		margin-bottom: 5rem;
 	}
@@ -31,6 +41,6 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 1rem 1.5rem;
-		margin: 2rem;
+		margin: 1rem;
 	}
 </style>
