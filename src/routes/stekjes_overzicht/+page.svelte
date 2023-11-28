@@ -1,6 +1,6 @@
 <script>
 	export let data;
-	import { HeaderStekje, Footer, NavDark, MobileMenu, StekjeCard } from '$lib/index.js';
+	import { HeaderStekje, Footer, NavDark, MobileMenu, StekjeCard, StekjesInfo } from '$lib/index.js';
 </script>
 
 <NavDark />
@@ -9,7 +9,7 @@
 
 <main>
 	<div class="intro">
-		<!-- hier komt nog echte tekst -->
+		<StekjesInfo/>
 	</div>
 	{#each data.stekjes as stekje}
 		<StekjeCard {data} />
@@ -26,9 +26,7 @@
 		background-color: var(--card-color-light);
 		border-radius: var(--bradius);
 	}
-	header {
-		margin-bottom: 5rem;
-	}
+
 
 	main {
 		display: flex;
@@ -37,5 +35,6 @@
 		justify-content: center;
 		gap: 1rem 1.5rem;
 		margin: 1rem;
+		margin-top: 3rem;
 	}
 </style>

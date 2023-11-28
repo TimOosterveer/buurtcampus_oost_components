@@ -1,13 +1,12 @@
 <script>
-    import  ContactForm from '$lib/molecules/ContactForm.svelte'
+    import ContactForm from '$lib/molecules/ContactForm.svelte'
     import Location from '$lib/atoms/Location.svelte'
     import ContactInfo from '$lib/atoms/contactInfo.svelte'
     import Footer from '$lib/organisms/Footer.svelte'
     import Navigation from '$lib/organisms/NavDark.svelte'
 	import MobileNavigation from '$lib/organisms/MobileMenu.svelte'
+
 </script>
-
-
 
 <header>
 <MobileNavigation></MobileNavigation>

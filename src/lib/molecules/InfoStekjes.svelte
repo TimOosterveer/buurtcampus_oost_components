@@ -1,0 +1,1 @@
+<p>Heb jij een of meerdere plantenstekjes over en zou je die graag willen ruilen voor een nieuwe plantje? Bekijk hieronder ons aanbod.</p>
