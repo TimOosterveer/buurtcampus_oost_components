@@ -1,12 +1,9 @@
 <script>
     import StekjeCard from '$lib/atoms/StekjesCard.svelte'
-    import Header from '$lib/organisms/Header.svelte'
      import Footer from '$lib/organisms/Footer.svelte'
     export let data
 </script>
 
-
-<Header></Header>
 
 <!-- hier komt nog tekst -->
 <main>

@@ -76,10 +76,10 @@
 			</a>
 			<ul>
 				<li>
-					<a class="menu-item" href="/"> Home </a>
+					<a class="menu-item" href="/home"> Home </a>
 				</li>
 				<li>
-					<a class="menu-item" href="/all_stekjes"> Stekjes </a>
+					<a class="menu-item" href="/stekjes_overzicht"> Stekjes </a>
 				</li>
 				<li>
 					<a class="menu-item" href="/workshops"> Workshops </a>
