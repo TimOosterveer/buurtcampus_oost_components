@@ -1,4 +1,7 @@
 <script>
+	export let data;
+
+	import Image from '$lib/atoms/KastImage.svelte'
 	import IntroKast from '$lib/organisms/IntroKast.svelte';
 	import MobileMenu from '$lib/organisms/MobileMenu.svelte';
 	import NavDark from '$lib/organisms/NavDark.svelte';
@@ -11,6 +14,8 @@
 
 <NavDark />
 <MobileMenu />
+
+<Image data={data} />
 <IntroKast />
 <TheMaking />
 <TheMaking2 />
@@ -20,8 +25,7 @@
 <div class="filler"></div>
 <Footer />
 
-
-<style> 
+<style>
 	/* .title-wrapper {
 		height: 80vh;
 	}
@@ -29,7 +33,6 @@
 	h2 {
 		font-size: 8vw;
 	} */
-
 
 	.filler {
 		height: 60vh;
