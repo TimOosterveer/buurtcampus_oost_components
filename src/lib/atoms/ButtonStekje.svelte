@@ -14,6 +14,8 @@
 	</svg>
 </button>
 
+<!-- Slot gebruiken om zo een button te hebben voor alles -->
+
 <style>
 	button {
 		position: absolute;
