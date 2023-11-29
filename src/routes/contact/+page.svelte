@@ -17,7 +17,7 @@
 		<ContactInfo />
 		<ContactForm />
 	</section>
-	<Location></Location>
+	<Location />
 </main>
 
 <Footer />
