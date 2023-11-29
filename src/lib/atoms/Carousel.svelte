@@ -3,8 +3,7 @@
     import image1 from '$lib/assets/carousel-img-1.jpg'
     import image2 from '$lib/assets/carousel-img-2.jpg'
     import image3 from '$lib/assets/carousel-img-3.jpg'
-
-
+    import ButtonGelijkSwappen from "./ButtonGelijkSwappen.svelte";
 
 
     let intervalId;
@@ -13,7 +12,7 @@
         const carrouselContainer = document.querySelector('.carrousel');
         const carrousel = document.querySelector('.carrousel-a');
 
-        const interval = 4000;
+        const interval = 8000;
 
         intervalId = setInterval(() => {
 
@@ -39,6 +38,7 @@
 <main>
 <div class="carrousel" aria-label="Carousel">
     <h1>Swap nu je stekjes!</h1>
+    <ButtonGelijkSwappen/>
     <div class="carrousel-a">
         <div class="carrousel-picture"><img src={image1} alt="Slide 1"
                                             aria-label="carousel-image-1"></div>
@@ -46,7 +46,9 @@
                                             aria-label="carousel-image-2"></div>
         <div class="carrousel-picture"><img src={image3} loading=”lazy” alt="Slide 3"
                                             aria-label="carousel-image-3"></div>
+
     </div>
+
 </div>
 </main>
 
@@ -116,6 +118,7 @@
             height: 100%;
             left: 38%;
             font-size: 5rem;
+            line-height: 7rem;
         }
     }
 </style>

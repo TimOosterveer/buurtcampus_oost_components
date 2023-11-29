@@ -1,11 +1,19 @@
+<script>
+    import ButtonLocation from "./ButtonLocation.svelte";
+</script>
+
 <html>
 
 <div class="container-text-one">
-<h2>Doe mee!</h2>
-<p>Heb jij een of meerdere plantenstekjes over en zou je die graag willen ruilen voor een nieuw plantje? Meld je stekje
-    hier aan en ruil ‘m via de app. Schrijf de Latijnse naam van je plant en eventuele verzorgingstips op een labeltje
-    en neem ‘m mee naar de OBA Linnaeusstraat in Amsterdam.</p>
+    <h2>Doe mee!</h2>
+    <p>Heb jij een of meerdere plantenstekjes over en zou je die graag willen ruilen voor een nieuw plantje? Meld je
+        stekje
+        hier aan en ruil ‘m via de app. Schrijf de Latijnse naam van je plant en eventuele verzorgingstips op een
+        labeltje
+        en neem ‘m mee naar de OBA Linnaeusstraat in Amsterdam.</p>
 </div>
+
+<ButtonLocation/>
 
 </html>
 
@@ -26,6 +34,8 @@
         padding-left: 2rem;
         width: 95%;
     }
+
+
 
     /* MEDIA TABLET*/
     @media screen and (min-width: 48rem) {
