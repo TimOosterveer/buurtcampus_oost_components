@@ -29,7 +29,7 @@
 		justify-content: space-between;
 		position: relative;
 		border-radius: var(--bradius);
-		height: 40rem;
+		height: 90vh;
 		margin: var(--margin);
 		padding: var(--padding);
 		overflow: hidden;
@@ -39,7 +39,7 @@
 	section::after {
 		content: '';
 		position: absolute;
-		background-color: rgba(0, 0, 0, 0.475);
+		background-color: rgba(0, 0, 0, 0.07);
 		z-index: -1;
 		inset: 0;
 	}
