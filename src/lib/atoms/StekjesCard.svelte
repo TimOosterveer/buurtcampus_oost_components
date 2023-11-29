@@ -3,7 +3,7 @@
 	export let data;
 </script>
 
-<StekjesInfo/>
+<!-- <StekjesInfo/> -->
 {#each data.stekjes as stekje}
 	<article class={stekje.categories.naam}>
 		<img src={stekje.fotos[0].url} alt="" />
@@ -21,6 +21,7 @@
 		border-radius: var(--bradius);
 		overflow: hidden;
 		margin-top: 1rem;
+		z-index: -2;
 	}
 
 	h3 {
@@ -56,18 +57,17 @@
 		top: 0;
 		width: 100%;
 		height: 100%;
-		z-index: 1;
 		object-fit: cover;
 	}
 
-	img::after {
-		position: absolute;
-		left: 0;
-		top: 0;
-		height: 100%;
-		width: 100%;
+	article::after {
 		content: '';
-		background-color: rgba(0, 0, 0, 0.753);
-		z-index: 3;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.199);
+		z-index: 1;
 	}
 </style>

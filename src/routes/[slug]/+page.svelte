@@ -143,12 +143,12 @@
 	}
 
 	.beschrijving-tag {
-        display: flex;
-        align-items: center;
-    }
+		display: flex;
+		align-items: center;
+	}
 	.beschrijving-tag svg {
-        margin-right: 10px;
-    }
+		margin-right: 10px;
+	}
 
 	.container {
 		padding: 2rem;
