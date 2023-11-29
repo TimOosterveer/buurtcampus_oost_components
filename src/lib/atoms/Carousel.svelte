@@ -1,5 +1,10 @@
 <script>
     import {onDestroy, onMount} from 'svelte';
+    import image1 from '$lib/assets/carousel-img-1.jpg'
+    import image2 from '$lib/assets/carousel-img-2.jpg'
+    import image3 from '$lib/assets/carousel-img-3.jpg'
+    import ButtonGelijkSwappen from "./ButtonGelijkSwappen.svelte";
+
 
     let intervalId;
 
@@ -7,7 +12,7 @@
         const carrouselContainer = document.querySelector('.carrousel');
         const carrousel = document.querySelector('.carrousel-a');
 
-        const interval = 4000;
+        const interval = 8000;
 
         intervalId = setInterval(() => {
 
@@ -31,17 +36,24 @@
 </script>
 
 <main>
-<div class="carrousel" aria-label="Carousel">
-    <h1>Swap nu je stekjes!</h1>
-    <div class="carrousel-a">
-        <div class="carrousel-picture"><img src="src/lib/assets/carousel-img-1.jpg" alt="Slide 1"
-                                            aria-label="carousel-image-1"></div>
-        <div class="carrousel-picture"><img src="src/lib/assets/carousel-img-2.jpg" loading=”lazy” alt="Slide 2"
-                                            aria-label="carousel-image-2"></div>
-        <div class="carrousel-picture"><img src="src/lib/assets/carousel-img-3.jpg" loading=”lazy” alt="Slide 3"
-                                            aria-label="carousel-image-3"></div>
+    <div class="carrousel" aria-label="Carousel">
+        <div class="overlay"></div>
+
+        <h1>Swap nu je stekjes!</h1>
+
+        <ButtonGelijkSwappen/>
+        <div class="carrousel-a">
+            <div class="carrousel-picture"><img src={image1} alt="Slide 1"
+                                                aria-label="carousel-image-1"></div>
+            <div class="carrousel-picture"><img src={image2} loading=”lazy” alt="Slide 2"
+                                                aria-label="carousel-image-2"></div>
+            <div class="carrousel-picture"><img src={image3} loading=”lazy” alt="Slide 3"
+                                                aria-label="carousel-image-3"></div>
+
+
+        </div>
+
     </div>
-</div>
 </main>
 
 <style>
@@ -52,6 +64,16 @@
 
     .carrousel {
         width: 100%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 31.6%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+        z-index: 1;
     }
 
     .carrousel h1 {
@@ -95,21 +117,33 @@
     /* MEDIA QUERY TABLET*/
     @media screen and (min-width: 48rem) {
 
+        .overlay {
+            height: 42.2%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+        }
+
         .carrousel h1 {
             width: 50%;
             height: 45%;
             left: 25%;
             font-size: 3rem;
         }
+
     }
 
     /* MEDIA QUERY DESKTOP */
     @media screen and (min-width: 64rem) {
+        .overlay {
+            height: 110%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+        }
+
         .carrousel h1 {
             width: 25rem;
             height: 100%;
             left: 38%;
             font-size: 5rem;
+            line-height: 7rem;
         }
     }
 </style>

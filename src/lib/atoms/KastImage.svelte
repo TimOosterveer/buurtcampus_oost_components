@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 30vw;
+    height: 90vh;
   }
   
   div {

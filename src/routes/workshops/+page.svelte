@@ -5,9 +5,7 @@
 
 <NavDark />
 <MobileMenu />
-
 <Header data={data}/>
 <Info/>
 <Card data={data}/>
-
 <Footer />

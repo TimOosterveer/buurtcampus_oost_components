@@ -1,11 +1,9 @@
-
-
 <script>
-    export let data;
+	export let data;
 </script>
 
-<html>
 <main>
+
     <div class="flex-wrapper-2">
         <svg class="svg-leaf" width="282" height="605" viewBox="0 0 282 605" fill="none"
              xmlns="http://www.w3.org/2000/svg">
@@ -26,130 +24,139 @@
         </div>
 
         <div class="flex-wrapper-recent-stekjes">
-
-            {#each data.stekjes as stekje}
-                <img src={stekje.fotos[0].url} alt="foto van een stekje" width="100"/>
+            {#each data.stekjes.slice(0, 4) as stekje}
+                <img src={stekje.fotos[0].url} alt="foto van een stekje" width="100" />
             {/each}
         </div>
     </div>
-
-
-
-
 </main>
-</html>
 
 <style>
-    h5 {
-        font-size: 1.5rem;
-        color: var(--background-color);
-        margin-bottom: 1rem;
-    }
+	h5 {
+		font-size: 1.5rem;
+		color: var(--background-color);
+		margin-bottom: 1rem;
+	}
 
-    p {
-        color: var(--background-color);
-    }
+	p {
+		color: var(--background-color);
+	}
 
-    main {
-        margin-bottom: 5rem;
-    }
+	main {
+		margin-bottom: 5rem;
+	}
 
-    .svg-leaf {
-        z-index: -1;
-        position: absolute;
-        width: 40%;
-    }
+	.svg-leaf {
+		z-index: -1;
+		position: absolute;
+		width: 40%;
+	}
 
-    .svg-arrow {
-        visibility: hidden;
-    }
+	.svg-arrow {
+		visibility: hidden;
+	}
 
-    .container-text-four {
-        padding-top: 3rem;
-        padding-left: 2rem;
-        padding-bottom: 2rem;
-        width: 95%;
-    }
+	.container-text-four {
+		padding-top: 3rem;
+		padding-left: 2rem;
+		padding-bottom: 2rem;
+		width: 95%;
+	}
 
-    .flex-wrapper-2 {
-        z-index: 1;
-        position: relative;
-        background-color: var(--background-color-light);
+	.flex-wrapper-2 {
+		z-index: 1;
+		position: relative;
+		background-color: var(--background-color-light);
+	}
 
+	.flex-wrapper-recent-stekjes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+		margin-top: 2rem;
+		padding-bottom: 5rem;
+	}
 
-    }
+	.flex-wrapper-recent-stekjes img {
+		width: 15rem;
+		border-radius: 30px;
+	}
 
+	/* MEDIA TABLET*/
+	@media screen and (min-width: 48rem) {
+		h5 {
+			font-size: 3rem;
+		}
 
+		.svg-leaf {
+			width: 20%;
+			top: -10%;
+		}
 
-    /* MEDIA TABLET*/
-    @media screen and (min-width: 48rem) {
+		.flex-wrapper-2 {
+			display: flex;
+			flex-direction: column;
+			margin-top: 5rem;
+			margin-left: 5%;
+			width: 90%;
+			border-radius: 40px;
+		}
 
-        h5 {
-            font-size: 3rem;
-        }
+		.container-text-four {
+			margin-top: 2rem;
+			margin-bottom: 0rem;
+			padding-left: 4rem;
+			width: 40rem;
+			height: 20rem;
+		}
 
-        .svg-leaf {
-            width: 20%;
-            top: -10%;
-        }
+		.flex-wrapper-recent-stekjes {
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin-top: 0;
+		}
 
-        .flex-wrapper-2 {
-            display: flex;
-            flex-direction: column;
-            margin-top: 5rem;
-            margin-left: 5%;
-            width: 90%;
-            border-radius: 40px;
-        }
+	}
 
-        .container-text-four {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            padding-left: 4rem;
-            width: 40rem;
-            height: 20rem;
+	/* MEDIA QUERY DESKTOP */
+	@media screen and (min-width: 64rem) {
+		h5 {
+			font-size: 6rem;
+			line-height: 8rem;
+			margin-bottom: 2rem;
+		}
 
-        }
+		.svg-leaf {
+			width: 40%;
+			top: 20%;
+		}
 
+		.svg-arrow {
+			visibility: visible;
+			margin-top: 8rem;
+			margin-left: 3rem;
+		}
 
-    }
+		.flex-wrapper-2 {
+			display: flex;
+			flex-direction: row;
+			margin-top: 5rem;
+			margin-left: 5%;
+			width: 90%;
+			border-radius: 40px;
+		}
 
-    /* MEDIA QUERY DESKTOP */
-    @media screen and (min-width: 64rem) {
-        h5 {
-            font-size: 8rem;
-            line-height: 8rem;
-            margin-bottom: 2rem;
-        }
+		.container-text-four {
+			margin-top: 3rem;
+			padding-left: 4rem;
+			width: 40rem;
+			height: 50rem;
+		}
 
-        .svg-leaf {
-            width: 40%;
-            top: 20%;
-        }
-
-        .svg-arrow {
-            visibility: visible;
-            margin-top: 8rem;
-            margin-left: 3rem;
-        }
-
-        .flex-wrapper-2 {
-            display: flex;
-            flex-direction: row;
-            margin-top: 5rem;
-            margin-left: 5%;
-            width: 90%;
-            border-radius: 40px;
-        }
-
-        .container-text-four {
-            margin-top: 3rem;
-            padding-left: 4rem;
-            width: 40rem;
-            height: 50rem;
-
-        }
-
-
-    }
+		.flex-wrapper-recent-stekjes {
+			padding-top: 8rem;
+		}
+	}
 </style>

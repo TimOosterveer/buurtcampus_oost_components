@@ -18,7 +18,7 @@
     <SectionTwoHome/>
     <SectionThreeHome/>
     <SectionFourHome data={data}  />
-    <SectionBannerHome></SectionBannerHome>
+    <SectionBannerHome />
 </main>
 
 <!--CSS STYLING-->

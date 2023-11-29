@@ -1,3 +1,7 @@
+<script>
+    import ButtonDeKast from "./ButtonDeKast.svelte";
+</script>
+
 <html>
 
 <div class="container-text-three">
@@ -9,6 +13,8 @@
         sociale connectie, is PlantSwap Amsterdam een plek van sociale ontmoeting, waar mensen samen leren over
         planten.</p>
 </div>
+
+<ButtonDeKast/>
 
 </html>
 
