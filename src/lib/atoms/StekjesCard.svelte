@@ -3,49 +3,70 @@
 	export let data;
 </script>
 
-<article class={data.stekjes[0].categories[0].naam}>
-	<h3>{data.stekjes[0].naam}</h3>
-	<span
-		><a href={data.stekjes[0].slug}
-			>Bekijk stekje <i class="fa-solid fa-play" style="color: #ffffff;"></i></a
-		></span
-	>
-	<img src={data.stekjes[0].fotos[0].url} alt="data.stekjes[0].naam" />
-</article>
+{#each data.stekjes as stekje}
+	<article class={stekje.categories.naam}>
+		<img src={stekje.fotos[0].url} alt="" />
+		<a href={stekje.slug}>Bekijk stekje <i class="fa-solid fa-play" style="color: #ffffff;"></i></a>
+		<h3>{stekje.naam}</h3>
+	</article>
+{/each}
 
 <style>
 	article {
-		overflow: hidden;
-		width: 13rem;
-		height: 22rem;
-		padding: 1.5rem;
-		border-radius: var(--bradius);
-	}
-
-	article h3 {
-		color: white;
-	}
-
-	article span {
 		position: relative;
-		width: 6rem;
-		background-color: var(--button-color);
-		padding: 6px;
-		border-radius: 1rem;
-		top: 15.5rem;
+		width: 24.2%;
+		height: 70vh;
+		padding: 1rem;
+		border-radius: var(--bradius);
+		overflow: hidden;
+		margin-top: 1rem;
+	}
+
+	h3 {
+		position: relative;
+		color: white;
+		z-index: 5;
+		font-size: 2rem;
+		line-height: 1.5em;
 	}
 
 	article a {
+		position: absolute;
+		bottom: 1rem;
+		left: 1rem;
 		text-decoration: none;
 		color: white;
+		background-color: var(--button-color);
+		padding: 0.5rem 1rem;
+		border-radius: var(--bradius);
+		cursor: pointer;
+		z-index: 5;
+		transition: 0.2s;
 	}
 
-	article img {
-		position: relative;
-		top: -10rem;
-		left: -2rem;
-		width: 18rem;
-		height: 30rem;
-		z-index: -2;
+	a:hover {
+		background-color: white;
+		color: var(--button-color);
+	}
+
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		object-fit: cover;
+	}
+
+	img::after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		content: '';
+		background-color: rgba(0, 0, 0, 0.753);
+		z-index: 3;
 	}
 </style>
