@@ -3,6 +3,8 @@
 	import NavDark from '$lib/organisms/NavDark.svelte';
 	import Footer from '$lib/organisms/Footer.svelte';
 	import MobileMenu from '$lib/organisms/MobileMenu.svelte';
+
+	import VectorPlant from '$lib/assets/vectorplant.svg';
 	// import HeaderStekje from '$lib/organisms/HeaderStekje.svelte';
 </script>
 
@@ -18,6 +20,9 @@
 <section class="container">
 	<div class="stekje-container">
 		<div class="left">
+			<img id="one" src={VectorPlant} alt="incon plant" />
+			<img id="two" src={VectorPlant} alt="incon plant" />
+			<img id="three" src={VectorPlant} alt="incon plant" />
 			<div class="beschrijving-tag">
 				<svg
 					width="25"
@@ -141,15 +146,6 @@
 		font-size: 1.2em;
 		margin-top: 15px;
 	}
-
-	.beschrijving-tag {
-		display: flex;
-		align-items: center;
-	}
-	.beschrijving-tag svg {
-		margin-right: 10px;
-	}
-
 	.container {
 		padding: 2rem;
 	}
@@ -166,10 +162,36 @@
 
 	.left {
 		position: sticky;
-		top: 0;
+		top: 1rem;
 		width: 50%;
 		height: 89vh;
 		padding-right: 5%;
+		overflow: hidden;
+	}
+
+	#one {
+		position: absolute;
+		bottom: -5rem;
+		right: 2rem;
+		width: 200px;
+		height: 200px;
+	}
+
+	#two {
+		position: absolute;
+		top: 30rem;
+		left: -5rem;
+		width: 200px;
+		height: 200px;
+		rotate: 70deg;
+	}
+	#three {
+		position: absolute;
+		top: 10rem;
+		right: -7rem;
+		transform: rotate(-10deg);
+		width: 200px;
+		height: 200px;
 	}
 
 	.right {
