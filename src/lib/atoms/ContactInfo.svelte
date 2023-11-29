@@ -5,6 +5,7 @@
 		planten!
 	</p>
 </div>
+
 <style>
 	div {
 		margin-bottom: 2rem;
@@ -13,6 +14,7 @@
 		width: 25rem;
 		border-radius: var(--bradius);
 	}
+
 	p {
 		width: 23rem;
 		margin-top: 0.5rem;
