@@ -3,7 +3,6 @@
 	import NavDark from '$lib/organisms/NavDark.svelte';
 	import Footer from '$lib/organisms/Footer.svelte';
 	import MobileMenu from '$lib/organisms/MobileMenu.svelte';
-
 	import VectorPlant from '$lib/assets/vectorplant.svg';
 	// import HeaderStekje from '$lib/organisms/HeaderStekje.svelte';
 </script>
@@ -19,10 +18,10 @@
 
 <section class="container">
 	<div class="stekje-container">
+		<img id="one" src={VectorPlant} alt="incon plant" />
+		<img id="two" src={VectorPlant} alt="incon plant" />
+		<img id="three" src={VectorPlant} alt="incon plant" />
 		<div class="left">
-			<img id="one" src={VectorPlant} alt="incon plant" />
-			<img id="two" src={VectorPlant} alt="incon plant" />
-			<img id="three" src={VectorPlant} alt="incon plant" />
 			<div class="beschrijving-tag">
 				<svg
 					width="25"
@@ -169,27 +168,36 @@
 		overflow: hidden;
 	}
 
+	.beschrijving-tag {
+		display: flex;
+		align-items: center;
+	}
+
+	.beschrijving-tag svg {
+		margin-right: 10px;
+	}
+
 	#one {
 		position: absolute;
-		bottom: -5rem;
-		right: 2rem;
+		bottom: -0.8rem;
+		right: 5rem;
 		width: 200px;
 		height: 200px;
 	}
 
 	#two {
 		position: absolute;
-		top: 30rem;
-		left: -5rem;
+		top: 40rem;
+		left: -0.5rem;
 		width: 200px;
 		height: 200px;
 		rotate: 70deg;
 	}
 	#three {
 		position: absolute;
-		top: 10rem;
-		right: -7rem;
-		transform: rotate(-10deg);
+		top: 5rem;
+		right: 2rem;
+		transform: rotate(-20deg);
 		width: 200px;
 		height: 200px;
 	}
@@ -231,6 +239,12 @@
 		font-size: 25px;
 		margin-right: 5px;
 		margin-bottom: 5px;
+		/* transition: transform 0.4s; */
+	}
+
+	.accordion input[type='radio']:checked + label::before {
+		content: '-';
+		/* transform: rotate(360deg); */
 	}
 
 	input[type='radio'] {
@@ -240,11 +254,10 @@
 	.accordion .content {
 		color: black;
 		padding: 0 10px;
-		line-height: 26px;
 		max-height: 0;
 		overflow: hidden;
 		transition:
-			max-height 0.5s,
+			max-height 0.7s,
 			padding 0.5s;
 	}
 
