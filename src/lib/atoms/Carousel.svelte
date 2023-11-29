@@ -61,6 +61,7 @@
     main {
         background-color: var(--background-color);
     }
+    
 
     .carrousel {
         width: 100%;
@@ -138,11 +139,15 @@
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
         }
 
+        .carrousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .carrousel h1 {
-            width: 25rem;
+            width: 60%;
             height: 100%;
-            left: 38%;
-            font-size: 5rem;
+            font-size: 9vw;
             line-height: 7rem;
         }
     }

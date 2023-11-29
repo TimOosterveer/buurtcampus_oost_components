@@ -1,6 +1,13 @@
 <script>
 	export let data;
-	import { HeaderStekje, Footer, NavDark, MobileMenu, StekjeCard, StekjesInfo } from '$lib/index.js';
+	import {
+		HeaderStekje,
+		Footer,
+		NavDark,
+		MobileMenu,
+		StekjeCard,
+		StekjesInfo
+	} from '$lib/index.js';
 </script>
 
 <NavDark />
@@ -8,33 +15,34 @@
 <HeaderStekje {data} />
 
 <main>
-	<div class="intro">
-		<StekjesInfo/>
-	</div>
-	{#each data.stekjes as stekje}
-		<StekjeCard {data} />
-	{/each}
+	<!-- <div class="intro">
+		<StekjesInfo />
+	</div> -->
+
+	<!-- {#each data.stekjes as stekje} -->
+	<StekjeCard {data} />
+	<!-- {/each} -->
+
 	<!-- <StekjesCard data={data}/> -->
 </main>
 
 <Footer />
 
 <style>
-	.intro {
-		width: 13rem;
+	/* .intro {
+		width: 24%;
 		height: 22rem;
 		background-color: var(--card-color-light);
 		border-radius: var(--bradius);
-	}
-
+	} */
 
 	main {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
-		gap: 1rem 1.5rem;
+		/* justify-content: center; */
+		gap: 1%;
 		margin: 1rem;
-		margin-top: 3rem;
+		/* margin-top: 3rem; */
 	}
 </style>
