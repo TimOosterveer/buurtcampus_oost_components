@@ -26,10 +26,41 @@
         display: flex;
         flex-direction: column;
     }
+    
     form{
         display: flex;
         flex-direction: column;
         width: 25rem;
         padding: var(--padding);
+        gap: 4px;
     }
+
+    input[type="text"]{
+        border: none;
+        padding: 0.5rem;
+        border-radius: var(--bradius);
+    }
+
+    textarea{
+        border: none;
+        padding: 0.5rem;
+        border-radius: var(--bradius);
+    }
+
+    input[type="submit"]{
+        margin-top: 1rem;
+        border: none;
+        border-radius: var(--bradius);
+        padding: 0.5rem;
+        width: 6rem;
+        background-color: var(--button-color);
+        color: var(--text-color);
+        font-weight: bold;
+    }
+
+    input[type="submit"]:hover{
+        color: var(--button-color);
+        background-color: var(--text-color);
+    }
+    
 </style>

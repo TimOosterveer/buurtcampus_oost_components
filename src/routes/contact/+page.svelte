@@ -30,5 +30,6 @@
 		padding: var(--padding);
 		background-color: var(--background-color-light);
 		border-radius: var(--bradius);
+		width: 85%;
 	}
 </style>

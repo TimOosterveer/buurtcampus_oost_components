@@ -1,16 +1,29 @@
-<div>
-	<h2>Contact</h2>
+<script>
+	 import Vector from '$lib/assets/vector.svg';
+</script>
+
+<section>
+	<div><img src={Vector} alt="icon info tekst" />
+	<h2>Contact</h2></div>
 	<p>
 		Vragen, suggesties of gewoon zin in een groene babbel? Neem contact op en laten we praten over
 		planten!
 	</p>
-</div>
+</section>
 
 <style>
-	div {
-		background-color: var(--background-color-light);
+
+	div{
+		display: flex;
+		gap: 1rem;
+	}
+
+	div img{
+		height: 2rem;
+		width: auto;
+	}
+	section {
 		width: 20rem;
-		padding: var(--padding);
 	}
 
 	p {
