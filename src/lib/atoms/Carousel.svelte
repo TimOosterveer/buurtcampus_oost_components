@@ -1,5 +1,11 @@
 <script>
     import {onDestroy, onMount} from 'svelte';
+    import image1 from '$lib/assets/carousel-img-1.jpg'
+    import image2 from '$lib/assets/carousel-img-2.jpg'
+    import image3 from '$lib/assets/carousel-img-3.jpg'
+
+
+
 
     let intervalId;
 
@@ -34,11 +40,11 @@
 <div class="carrousel" aria-label="Carousel">
     <h1>Swap nu je stekjes!</h1>
     <div class="carrousel-a">
-        <div class="carrousel-picture"><img src="src/lib/assets/carousel-img-1.jpg" alt="Slide 1"
+        <div class="carrousel-picture"><img src={image1} alt="Slide 1"
                                             aria-label="carousel-image-1"></div>
-        <div class="carrousel-picture"><img src="src/lib/assets/carousel-img-2.jpg" loading=”lazy” alt="Slide 2"
+        <div class="carrousel-picture"><img src={image2} loading=”lazy” alt="Slide 2"
                                             aria-label="carousel-image-2"></div>
-        <div class="carrousel-picture"><img src="src/lib/assets/carousel-img-3.jpg" loading=”lazy” alt="Slide 3"
+        <div class="carrousel-picture"><img src={image3} loading=”lazy” alt="Slide 3"
                                             aria-label="carousel-image-3"></div>
     </div>
 </div>
