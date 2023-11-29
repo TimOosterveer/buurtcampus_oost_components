@@ -76,7 +76,7 @@
 			</a>
 			<ul>
 				<li>
-					<a class="menu-item" href="/home"> Home </a>
+					<a class="menu-item" href="/"> Home </a>
 				</li>
 				<li>
 					<a class="menu-item" href="/stekjes_overzicht"> Stekjes </a>
