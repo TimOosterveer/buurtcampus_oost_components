@@ -9,7 +9,7 @@
 
 <section class="container">
 	<div class="stekje-container">
-		<div class="left">beschrijving></div>
+		<div class="left">beschrijving</div>
 		<p>{data.stekje.beschrijving}</p>
 	</div>
 
