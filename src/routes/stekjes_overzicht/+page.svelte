@@ -18,14 +18,14 @@
 	<!-- <StekjesCard data={data}/> -->
 </main>
 
-<Footer />
+<Footer/>
 
 <style>
 	.intro {
 		width: 13rem;
 		height: 22rem;
 		padding: 1rem;
-		background-color: var(--card-color-light);
+		background-color: var(--background-color-light);
 		border-radius: var(--bradius);
 	}
 
