@@ -21,4 +21,4 @@ export { default as TheMaking4 } from '$lib/organisms/TheMaking4.svelte';
 
 export { default as ContactForm } from '$lib/molecules/ContactForm.svelte';
 export { default as Location } from '$lib/atoms/Location.svelte';
-export { default as ContactInfo } from '$lib/atoms/contactInfo.svelte';
+export { default as ContactInfo } from '$lib/atoms/ContactInfo.svelte';
