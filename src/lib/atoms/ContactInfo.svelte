@@ -5,7 +5,6 @@
 		planten!
 	</p>
 </div>
-
 <style>
 	div {
 		margin-bottom: 2rem;
