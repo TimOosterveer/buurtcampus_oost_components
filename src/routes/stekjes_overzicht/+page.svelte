@@ -5,7 +5,8 @@
 		Footer,
 		NavDark,
 		MobileMenu,
-		StekjeCard,
+		StekjeCard, 
+		StekjesInfo
 	} from '$lib/index.js';
 </script>
 
@@ -14,6 +15,7 @@
 <HeaderStekje {data} />
 
 <main>
+	<!-- <StekjesInfo/> -->
 	<StekjeCard {data} />
 </main>
 

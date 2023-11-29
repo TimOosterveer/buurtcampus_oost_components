@@ -1,10 +1,9 @@
 <script>
-	 import StekjesInfo from '$lib/molecules/InfoStekjes.svelte';
 	export let data;
 	console.log(data)
 </script>
 
-<!-- <StekjesInfo/> -->
+
 {#each data.stekjes as stekje}
 	<article class={stekje.categories.naam}>
 		<img src={stekje.fotos[0].url} alt="" />
