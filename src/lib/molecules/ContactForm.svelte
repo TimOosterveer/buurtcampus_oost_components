@@ -1,4 +1,9 @@
+<script>
+    import ContactInfo from '$lib/atoms/ContactInfo.svelte';
+</script>
 
+<section>
+<ContactInfo/>
 
 <form>
     <label for="name">Voornaam:</label>
@@ -12,15 +17,19 @@
 
     <input type="submit" value="Verzenden">
 </form>
+</section>
+
 
 <style>
-  
+
+    section{
+        display: flex;
+        flex-direction: column;
+    }
     form{
         display: flex;
         flex-direction: column;
         width: 25rem;
-        background-color: var(--background-color-light);
         padding: var(--padding);
-        border-radius: var(--bradius);
     }
 </style>

@@ -1,7 +1,6 @@
 <script>
 	import ContactForm from '$lib/molecules/ContactForm.svelte';
 	import Location from '$lib/atoms/Location.svelte';
-	import ContactInfo from '$lib/atoms/ContactInfo.svelte';
 	import Footer from '$lib/organisms/Footer.svelte';
 	import Navigation from '$lib/organisms/NavDark.svelte';
 	import MobileNavigation from '$lib/organisms/MobileMenu.svelte';
@@ -13,19 +12,14 @@
 </header>
 
 <main>
-	<section>
-		<ContactInfo />
-		<ContactForm />
-	</section>
+	<ContactForm />
 	<Location />
 </main>
 
 <Footer />
 
 <style>
-	header {
-		margin-bottom: 5rem;
-	}
+
 
 	main {
 		margin: var(--margin);
@@ -33,6 +27,8 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		gap: 2rem;
-		justify-content: center;
+		padding: var(--padding);
+		background-color: var(--background-color-light);
+		border-radius: var(--bradius);
 	}
 </style>
