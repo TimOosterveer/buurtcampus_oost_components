@@ -1,6 +1,7 @@
 <script>
 	 import StekjesInfo from '$lib/molecules/InfoStekjes.svelte';
 	export let data;
+	console.log(data)
 </script>
 
 <!-- <StekjesInfo/> -->
@@ -21,7 +22,6 @@
 		border-radius: var(--bradius);
 		overflow: hidden;
 		margin-top: 1rem;
-		z-index: -2;
 	}
 
 	h3 {
