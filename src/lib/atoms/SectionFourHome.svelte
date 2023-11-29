@@ -27,8 +27,8 @@
 
         <div class="flex-wrapper-recent-stekjes">
 
-            {#each data.stekjes as stekje}
-                <img src={stekje.fotos[0].url} alt="foto van een stekje" width="100"/>
+            {#each data.stekjes.slice(0, 4) as stekje}
+                <img src={stekje.fotos[0].url} alt="foto van een stekje" width="100" />
             {/each}
         </div>
     </div>
