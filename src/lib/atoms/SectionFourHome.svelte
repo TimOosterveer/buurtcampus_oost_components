@@ -1,10 +1,7 @@
-
-
 <script>
     export let data;
 </script>
 
-<html>
 <main>
     <div class="flex-wrapper-2">
         <svg class="svg-leaf" width="282" height="605" viewBox="0 0 282 605" fill="none"
@@ -26,18 +23,10 @@
         </div>
 
         <div class="flex-wrapper-recent-stekjes">
-
-            {#each data.stekjes as stekje}
-                <img src={stekje.fotos[0].url} alt="foto van een stekje" width="100"/>
-            {/each}
+            <img src={data.stekjes[0].fotos[0].url} alt="">
         </div>
     </div>
-
-
-
-
 </main>
-</html>
 
 <style>
     h5 {
