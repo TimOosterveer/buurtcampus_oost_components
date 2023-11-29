@@ -1,7 +1,7 @@
 <script>
 	import ContactForm from '$lib/molecules/ContactForm.svelte';
 	import Location from '$lib/atoms/Location.svelte';
-	import ContactInfo from '$lib/atoms/ContactInformatie.svelte';
+	import ContactInformatie from '$lib/atoms/ContactInformatie.svelte';
 	import Footer from '$lib/organisms/Footer.svelte';
 	import Navigation from '$lib/organisms/NavDark.svelte';
 	import MobileNavigation from '$lib/organisms/MobileMenu.svelte';
@@ -14,7 +14,7 @@
 
 <main>
 	<section>
-		<ContactInfo />
+		<ContactInformatie />
 		<ContactForm />
 	</section>
 	<Location></Location>
