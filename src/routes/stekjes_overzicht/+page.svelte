@@ -1,11 +1,12 @@
 <script>
 	export let data;
-	import { HeaderStekje, Footer, NavDark, MobileMenu, StekjeCard, StekjesInfo } from '$lib/index.js';
+	import { HeaderStekje, Footer, NavDark, MobileMenu, StekjeCard, StekjesInfo, FilterFunctie } from '$lib/index.js';
 </script>
 
 <NavDark />
 <MobileMenu />
-<HeaderStekje {data} />
+<HeaderStekje {data} />                                                                                                                                                                                                                                                                                                   
+
 
 <main>
 	<div class="intro">
@@ -23,6 +24,7 @@
 	.intro {
 		width: 13rem;
 		height: 22rem;
+		padding: 1rem;
 		background-color: var(--card-color-light);
 		border-radius: var(--bradius);
 	}

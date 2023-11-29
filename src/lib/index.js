@@ -11,6 +11,7 @@ export { default as MobileMenu } from '$lib/organisms/MobileMenu.svelte';
 export { default as HeaderStekje } from '$lib/molecules/ImageOverzicht.svelte';
 export { default as StekjeCard } from '$lib/atoms/StekjesCard.svelte';
 export { default as StekjesInfo } from '$lib/molecules/InfoStekjes.svelte';
+export { default as FilterFunctie } from '$lib/atoms/Filter.svelte';
 
 export { default as HeaderKast } from '$lib/atoms/KastImage.svelte';
 export { default as IntroKast } from '$lib/organisms/IntroKast.svelte';
