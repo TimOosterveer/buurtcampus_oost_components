@@ -1,6 +1,14 @@
 <script>
 	export let data;
+	import NavDark from '$lib/organisms/NavDark.svelte';
+	import Footer from '$lib/organisms/Footer.svelte';
+	import MobileMenu from '$lib/organisms/MobileMenu.svelte';
+	// import HeaderStekje from '$lib/organisms/HeaderStekje.svelte';
 </script>
+
+<!-- <HeaderStekje {data} /> -->
+<NavDark />
+<MobileMenu />
 
 <section class="image-section">
 	<img src={data.stekje.fotos[0].url} alt="foto van {data.naam}" />
@@ -10,78 +18,94 @@
 <section class="container">
 	<div class="stekje-container">
 		<div class="left">
+			<div class="beschrijving-tag">
+				<svg
+					width="25"
+					height="25"
+					viewBox="0 0 23 25"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M20.5 8.16988C23.8333 10.0944 23.8333 14.9056 20.5 16.8301L7.74999 24.1913C4.41666 26.1158 0.249999 23.7102 0.249999 19.8612L0.25 5.13877C0.25 1.28977 4.41667 -1.11584 7.75 0.808657L20.5 8.16988Z"
+						fill="#F26F21"
+					/>
+				</svg>
+				<h2>Beschrijving</h2>
+			</div>
+			<p>{data.stekje.beschrijving}</p>
+		</div>
+		<div class="right">
+			<ul class="accordion">
+				<li>
+					<input type="radio" name="accordion" id="first" checked />
+					<label for="first">Landherkomst</label>
+					<div class="content">
+						<p>{data.stekje.landvanherkomst}</p>
+					</div>
+				</li>
 
-		<h2>Beschrijving</h2>
-		<p>{data.stekje.beschrijving}</p>
-	</div>
-	<div class="right">
-		<ul class="accordion">
-			<li>
-				<input type="radio" name="accordion" id="first" checked />
-				<label for="first">Landherkomst</label>
-				<div class="content">
-					<p>{data.stekje.landvanherkomst}</p>
-				</div>
-			</li>
+				<li>
+					<input type="radio" name="accordion" id="second" />
+					<label for="second">Voeding</label>
+					<div class="content">
+						<p>{data.stekje.voeding}</p>
+					</div>
+				</li>
 
-			<li>
-				<input type="radio" name="accordion" id="second" />
-				<label for="second">Voeding</label>
-				<div class="content">
-					<p>{data.stekje.voeding}</p>
-				</div>
-			</li>
+				<li>
+					<input type="radio" name="accordion" id="fifth" />
+					<label for="fifth">Temperatuur</label>
+					<div class="content">
+						<p>{data.stekje.temperatuur}</p>
+					</div>
+				</li>
 
-			<li>
-				<input type="radio" name="accordion" id="fifth" />
-				<label for="fifth">Temperatuur</label>
-				<div class="content">
-					<p>{data.stekje.temperatuur}</p>
-				</div>
-			</li>
+				<li>
+					<input type="radio" name="accordion" id="fourth" />
+					<label for="fourth">Giftig</label>
+					<div class="content">
+						<p>{data.stekje.giftig}</p>
+					</div>
+				</li>
 
-			<li>
-				<input type="radio" name="accordion" id="fourth" />
-				<label for="fourth">Giftig</label>
-				<div class="content">
-					<p>{data.stekje.giftig}</p>
-				</div>
-			</li>
+				<li>
+					<input type="radio" name="accordion" id="third" />
+					<label for="third">Verpotten</label>
+					<div class="content">
+						<p>{data.stekje.verpotten}</p>
+					</div>
+				</li>
 
-			<li>
-				<input type="radio" name="accordion" id="third" />
-				<label for="third">Verpotten</label>
-				<div class="content">
-					<p>{data.stekje.verpotten}</p>
-				</div>
-			</li>
+				<li>
+					<input type="radio" name="accordion" id="sixth" />
+					<label for="sixth">Watergeven</label>
+					<div class="content">
+						<p>{data.stekje.watergeven}</p>
+					</div>
+				</li>
 
-			<li>
-				<input type="radio" name="accordion" id="sixth" />
-				<label for="sixth">Watergeven</label>
-				<div class="content">
-					<p>{data.stekje.watergeven}</p>
-				</div>
-			</li>
+				<li>
+					<input type="radio" name="accordion" id="seventh" />
+					<label for="seventh">Zonlicht</label>
+					<div class="content">
+						<p>{data.stekje.zonlicht}</p>
+					</div>
+				</li>
 
-			<li>
-				<input type="radio" name="accordion" id="seventh" />
-				<label for="seventh">Zonlicht</label>
-				<div class="content">
-					<p>{data.stekje.zonlicht}</p>
-				</div>
-			</li>
-
-			<li>
-				<input type="radio" name="accordion" id="eighth" />
-				<label for="eighth">Stekken</label>
-				<div class="content">
-					<p>{data.stekje.stekken}</p>
-				</div>
-			</li>
-		</ul>
+				<li>
+					<input type="radio" name="accordion" id="eighth" />
+					<label for="eighth">Stekken</label>
+					<div class="content">
+						<p>{data.stekje.stekken}</p>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</div>
 </section>
+
+<Footer />
 
 <style>
 	section {
@@ -110,8 +134,21 @@
 
 	h2 {
 		color: var(--background-color);
-		font-size: 3vw;
+		font-size: 2.7vw;
 	}
+
+	.left p {
+		font-size: 1.2em;
+		margin-top: 15px;
+	}
+
+	.beschrijving-tag {
+        display: flex;
+        align-items: center;
+    }
+	.beschrijving-tag svg {
+        margin-right: 10px;
+    }
 
 	.container {
 		padding: 2rem;
@@ -119,7 +156,7 @@
 
 	.stekje-container {
 		position: relative;
-		background-color: var(--card-color-light);
+		background-color: #f9e9c2;
 		width: 100%;
 		border-radius: var(--bradius);
 		display: flex;
@@ -130,9 +167,9 @@
 	.left {
 		position: sticky;
 		top: 0;
-		width: 40%;
+		width: 50%;
 		height: 89vh;
-		padding-right: 10%;
+		padding-right: 5%;
 	}
 
 	.right {
@@ -152,7 +189,7 @@
 		flex-direction: column;
 		margin-bottom: 1rem;
 		width: 100%;
-		background-color: var(--button-color);
+		background-color: #fbc980;
 		border-radius: var(--bradius);
 	}
 
@@ -161,15 +198,17 @@
 		align-items: center;
 		color: var(--background-color);
 		text-transform: uppercase;
-		padding: 10px;
+		font-weight: 600;
+		padding: 7px;
 		cursor: pointer;
 	}
 
 	label::before {
 		content: '+';
-		color: var(--card-color-light);
-		font-size: 24px;
-		font-weight: 500;
+		color: black;
+		font-size: 25px;
+		margin-right: 5px;
+		margin-bottom: 5px;
 	}
 
 	input[type='radio'] {
@@ -177,7 +216,7 @@
 	}
 
 	.accordion .content {
-		color: white;
+		color: black;
 		padding: 0 10px;
 		line-height: 26px;
 		max-height: 0;
