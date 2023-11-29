@@ -6,8 +6,6 @@
 		NavDark,
 		MobileMenu,
 		StekjeCard,
-		StekjesInfo,
-		FilterFunctie
 	} from '$lib/index.js';
 </script>
 

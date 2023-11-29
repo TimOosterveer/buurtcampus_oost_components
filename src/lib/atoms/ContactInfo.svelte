@@ -8,11 +8,9 @@
 
 <style>
 	div {
-		margin-bottom: 2rem;
 		background-color: var(--background-color-light);
-		padding: 1rem;
-		width: 25rem;
-		border-radius: var(--bradius);
+		width: 20rem;
+		padding: var(--padding);
 	}
 
 	p {
