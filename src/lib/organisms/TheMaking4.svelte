@@ -29,8 +29,8 @@
 		padding: 2em;
 		height: 90vh;
 		width: 100%;
-		overflow: hidden;
 		color: rgb(59, 89, 62);
+		margin-bottom: 55vh;
 	}
 
 	.wrapper-block {

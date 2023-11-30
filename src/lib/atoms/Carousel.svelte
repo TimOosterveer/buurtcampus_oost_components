@@ -1,154 +1,156 @@
 <script>
-    import {onDestroy, onMount} from 'svelte';
-    import image1 from '$lib/assets/carousel-img-1.jpg'
-    import image2 from '$lib/assets/carousel-img-2.jpg'
-    import image3 from '$lib/assets/carousel-img-3.jpg'
-    import ButtonGelijkSwappen from "./ButtonGelijkSwappen.svelte";
+	import { onDestroy, onMount } from 'svelte';
+	import image1 from '$lib/assets/carousel-img-1.jpg';
+	import image2 from '$lib/assets/carousel-img-2.jpg';
+	import image3 from '$lib/assets/carousel-img-3.jpg';
+	import ButtonGelijkSwappen from './ButtonGelijkSwappen.svelte';
 
+	let intervalId;
 
-    let intervalId;
+	onMount(() => {
+		const carrouselContainer = document.querySelector('.carrousel');
+		const carrousel = document.querySelector('.carrousel-a');
 
-    onMount(() => {
-        const carrouselContainer = document.querySelector('.carrousel');
-        const carrousel = document.querySelector('.carrousel-a');
+		const interval = 8000;
 
-        const interval = 8000;
+		intervalId = setInterval(() => {
+			const currentScroll = carrousel.scrollLeft;
+			const itemWidth = carrouselContainer.clientWidth;
+			const totalWidth = carrousel.scrollWidth;
 
-        intervalId = setInterval(() => {
+			const nextScroll = (currentScroll + itemWidth) % totalWidth;
 
-            const currentScroll = carrousel.scrollLeft;
-            const itemWidth = carrouselContainer.clientWidth;
-            const totalWidth = carrousel.scrollWidth;
+			carrousel.scrollTo({
+				left: nextScroll,
+				behavior: 'smooth'
+			});
+		}, interval);
+	});
 
-            const nextScroll = (currentScroll + itemWidth) % totalWidth;
-
-            carrousel.scrollTo({
-                left: nextScroll,
-                behavior: 'smooth'
-            });
-        }, interval);
-    });
-
-    onDestroy(() => {
-
-        clearInterval(intervalId);
-    });
+	onDestroy(() => {
+		clearInterval(intervalId);
+	});
 </script>
 
 <main>
-    <div class="carrousel" aria-label="Carousel">
-        <div class="overlay"></div>
+	<div class="carrousel" aria-label="Carousel">
+		<div class="overlay"></div>
 
-        <h1>Swap nu je stekjes!</h1>
+		<h1>Swap nu je stekjes!</h1>
 
-        <ButtonGelijkSwappen/>
-        <div class="carrousel-a">
-            <div class="carrousel-picture"><img src={image1} alt="Slide 1"
-                                                aria-label="carousel-image-1"></div>
-            <div class="carrousel-picture"><img src={image2} loading=”lazy” alt="Slide 2"
-                                                aria-label="carousel-image-2"></div>
-            <div class="carrousel-picture"><img src={image3} loading=”lazy” alt="Slide 3"
-                                                aria-label="carousel-image-3"></div>
-
-
-        </div>
-
-    </div>
+		<ButtonGelijkSwappen />
+		<div class="carrousel-a">
+			<div class="carrousel-picture">
+				<img src={image1} alt="Slide 1" aria-label="carousel-image-1" />
+			</div>
+			<div class="carrousel-picture">
+				<img src={image2} loading="”lazy”" alt="Slide 2" aria-label="carousel-image-2" />
+			</div>
+			<div class="carrousel-picture">
+				<img src={image3} loading="”lazy”" alt="Slide 3" aria-label="carousel-image-3" />
+			</div>
+		</div>
+	</div>
 </main>
 
 <style>
+	main {
+		background-color: var(--background-color);
+	}
 
-    main {
-        background-color: var(--background-color);
-    }
-    
+	.carrousel {
+		width: 100%;
+	}
 
-    .carrousel {
-        width: 100%;
-    }
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 31.6%;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+		z-index: 1;
+	}
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 31.6%;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
-        z-index: 1;
-    }
+	.carrousel h1 {
+		position: absolute;
+		z-index: 1;
+		width: 60%;
+		color: var(--text-color);
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+        font-weight: 900;
 
-    .carrousel h1 {
-        position: absolute;
-        z-index: 1;
-        width: 60%;
-        color: var(--text-color);
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        height: 35%;
-        left: 20%;
-    }
+	}
 
-    .carrousel img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-    }
+	.carrousel img {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
+	}
 
-    .carrousel-a {
-        display: flex;
-        overflow: auto;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none;
-    }
+	.carrousel-a {
+		display: flex;
+		overflow: auto;
+		scroll-snap-type: x mandatory;
+		scrollbar-width: none;
+	}
 
-    .carrousel-a::-webkit-scrollbar {
-        display: none;
-    }
+	.carrousel-a::-webkit-scrollbar {
+		display: none;
+	}
 
-    .carrousel-picture {
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: 100%;
-        scroll-snap-align: center;
-    }
+	.carrousel-picture {
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 100%;
+		scroll-snap-align: center;
+	}
 
-    /* MEDIA QUERY TABLET*/
-    @media screen and (min-width: 48rem) {
+	/* MEDIA QUERY TABLET*/
+	@media screen and (min-width: 48rem) {
+		.overlay {
+			height: 42.2%;
+			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+		}
 
-        .overlay {
-            height: 42.2%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
-        }
+		.carrousel h1 {
+			width: 50%;
+			height: 45%;
+			font-size: 3rem;
+		}
+	}
 
-        .carrousel h1 {
-            width: 50%;
-            height: 45%;
-            left: 25%;
-            font-size: 3rem;
-        }
+	/* MEDIA QUERY DESKTOP */
+	@media screen and (min-width: 64rem) {
+		main {
 
-    }
+		}
 
-    /* MEDIA QUERY DESKTOP */
-    @media screen and (min-width: 64rem) {
-        .overlay {
-            height: 110%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
-        }
+		.carrousel {
+			height: 100vh;
+			width: 100%;
+		}
 
-        .carrousel {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .carrousel h1 {
-            width: 60%;
-            height: 100%;
-            font-size: 9vw;
-            line-height: 7rem;
-        }
-    }
+		.overlay {
+			height: 101.2%;
+			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+		}
+
+		.carrousel {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+        
+		.carrousel h1 {
+			width: 60%;
+			height: 100%;
+			font-size: 8vw;
+			line-height: 7rem;
+		}
+	}
 </style>

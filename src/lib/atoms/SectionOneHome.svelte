@@ -1,68 +1,76 @@
 <script>
-    import ButtonLocation from "./ButtonLocation.svelte";
+	import ButtonLocation from './ButtonLocation.svelte';
 </script>
 
-<html>
+<section>
+	<div class="container-text-one">
+		<h2>Doe mee!</h2>
+		<p>
+			Heb jij een of meerdere plantenstekjes over en zou je die graag willen ruilen voor een nieuw
+			plantje? Meld je stekje hier aan en ruil ‘m via de app. Schrijf de Latijnse naam van je plant
+			en eventuele verzorgingstips op een labeltje en neem ‘m mee naar de OBA Linnaeusstraat in
+			Amsterdam.
+		</p>
+        <ButtonLocation />
+	</div>
 
-<div class="container-text-one">
-    <h2>Doe mee!</h2>
-    <p>Heb jij een of meerdere plantenstekjes over en zou je die graag willen ruilen voor een nieuw plantje? Meld je
-        stekje
-        hier aan en ruil ‘m via de app. Schrijf de Latijnse naam van je plant en eventuele verzorgingstips op een
-        labeltje
-        en neem ‘m mee naar de OBA Linnaeusstraat in Amsterdam.</p>
-</div>
-
-<ButtonLocation/>
-
-</html>
-
+</section>
 
 <style>
-    h2 {
-        color: var(--text-color);
+    section {
+        padding: 2rem;
+
+    }
+	h2 {
+		color: var(--text-color);
+		margin-bottom: 1rem;
+	}
+
+	p {
+		color: var(--text-color);
         margin-bottom: 1rem;
-    }
+	}
 
-    p {
-        color: var(--text-color);
-    }
+	.container-text-one {
+		width: 100%;
+	}
 
-    .container-text-one {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        padding-left: 2rem;
-        width: 95%;
-    }
+	/* MEDIA TABLET*/
+	@media screen and (min-width: 48rem) {
+		h2 {
+			font-size: 3rem;
+		}
 
+		.container-text-one {
+			padding-left: 6rem;
+			width: 80%;
+		}
+	}
 
-
-    /* MEDIA TABLET*/
-    @media screen and (min-width: 48rem) {
-
-        h2 {
-            font-size: 3rem;
+	/* MEDIA QUERY DESKTOP */
+	@media screen and (min-width: 64rem) {
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 25vw;
         }
 
-        .container-text-one {
-            padding-left: 6rem;
-            width: 80%;
-        }
-    }
+		h2 {
+			font-size: 5rem;
+            font-weight: 700;
+            line-height: 1em;
+		}
 
-    /* MEDIA QUERY DESKTOP */
-    @media screen and (min-width: 64rem) {
-        h2 {
-            font-size: 5rem;
-        }
+		p {
+			font-size: 1.1rem;
+            margin-bottom: 1rem;
+		}
 
-        p {
-            font-size: 1.3rem;
-        }
-
-        .container-text-one {
-            padding-left: 30rem;
-            width: 75%;
-        }
-    }
+		.container-text-one {
+			width: 100%;
+            text-align: left;
+		}
+	}
 </style>

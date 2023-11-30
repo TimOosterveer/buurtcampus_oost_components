@@ -27,7 +27,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		position: relative;
 		border-radius: var(--bradius);
 		height: 90vh;
 		margin: var(--margin);

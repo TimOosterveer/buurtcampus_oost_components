@@ -1,12 +1,13 @@
 <script>
 	export let data;
 	import {HeaderKast, IntroKast, MobileMenu, NavDark, TheMaking, TheMaking2, TheMaking3, TheMaking4, Footer} from '$lib/index.js'
+	import InfoKast from '../../lib/molecules/InfoKast.svelte';
 </script>
 
 <NavDark />
 <MobileMenu />
 <HeaderKast {data} />
-<IntroKast />
+<InfoKast />
 <TheMaking />
 <TheMaking2 />
 <TheMaking3 />
@@ -22,7 +23,7 @@
 		font-size: 8vw;
 	} */
 
-	.filler {
+	/* .filler {
 		height: 60vh;
-	}
+	} */
 </style>

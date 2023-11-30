@@ -5,6 +5,16 @@
 <style>
     iframe{
     border-radius: var(--bradius);
+    width: 50%;
+    height: auto;
+}
+
+@media screen and (max-width: 700px) {
+    iframe{
+    border-radius: var(--bradius);
+    width: 100%;
+    height: auto;
+}
 }
 
 </style>

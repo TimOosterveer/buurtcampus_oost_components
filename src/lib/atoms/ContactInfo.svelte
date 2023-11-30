@@ -23,11 +23,11 @@
 		width: auto;
 	}
 	section {
-		width: 20rem;
+		width: 80%;
 	}
 
 	p {
-		width: 23rem;
+		width: 100%;
 		margin-top: 0.5rem;
 	}
 </style>

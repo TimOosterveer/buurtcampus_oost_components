@@ -37,7 +37,7 @@
 		overflow: hidden;
         color: var(--main-offwhite);
         color: rgb(255, 217, 184);
-
+		margin-bottom: 55vh;
 	}
 
 	.wrapper-block {

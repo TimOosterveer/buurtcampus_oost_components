@@ -25,14 +25,16 @@
     section{
         display: flex;
         flex-direction: column;
+        width: 50%;
+        padding-right: var(--padding);
     }
     
     form{
         display: flex;
         flex-direction: column;
-        width: 25rem;
-        padding: var(--padding);
+        width: 100%;
         gap: 4px;
+        margin-top: 2rem;
     }
 
     input[type="text"]{
@@ -62,5 +64,16 @@
         color: var(--button-color);
         background-color: var(--text-color);
     }
+
+    @media screen and (max-width: 700px) {
+
+   section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
     
 </style>

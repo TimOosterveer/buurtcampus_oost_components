@@ -53,8 +53,8 @@
     @media screen and (min-width: 48rem) {
         button {
             visibility: visible;
-            top: 33%;
-            left: 37%;
+            top: 67%;
+            left: 42%;
             margin-top: 0.5rem;
             z-index: 2;
         }
@@ -63,10 +63,7 @@
     /* MEDIA QUERY DESKTOP */
     @media screen and (min-width: 64rem) {
         button {
-            top: 80%;
-            left: 44%;
-            padding: 0.5rem 1.1rem;
-
+            padding: 0.4rem .7rem;
         }
     }
 

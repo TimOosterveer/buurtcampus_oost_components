@@ -37,8 +37,7 @@
 		width: 100%;
 		overflow: hidden;
         color: rgb(73, 27, 2);
-
-
+		margin-bottom: 55vh;
 	}
 
 	.wrapper-block {
