@@ -1,4 +1,5 @@
 # Plantswap
+![image](https://github.com/TimOosterveer/buurtcampus_oost_components/assets/112857270/63507a17-2858-4b15-a209-06753fa6b40d)
 
 <h2 align="center"> 🍀Buurtcampus-Oost Plantswap website🍀</h2>
 <br>
