@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34775548-75e7-4f2a-9575-0605f17cfa5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/img-planten.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/atoms/ButtonGelijkSwappen.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/ButtonGelijkSwappen.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/atoms/Carousel.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/Carousel.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/SectionTwoHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/SectionTwoHome.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,7 @@
       <recent name="$PROJECT_DIR$/src/lib/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/assets" />
       <recent name="$PROJECT_DIR$/src/lib/molecules" />
     </key>
   </component>
@@ -77,7 +78,8 @@
       <workItem from="1700691177551" duration="470000" />
       <workItem from="1701184782910" duration="14000" />
       <workItem from="1701184807033" duration="11683000" />
-      <workItem from="1701250296886" duration="5860000" />
+      <workItem from="1701250296886" duration="7162000" />
+      <workItem from="1701334250731" duration="659000" />
     </task>
     <servers />
   </component>

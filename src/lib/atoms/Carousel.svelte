@@ -5,7 +5,6 @@
     import image3 from '$lib/assets/carousel-img-3.jpg'
     import ButtonGelijkSwappen from "./ButtonGelijkSwappen.svelte";
 
-
     let intervalId;
 
     onMount(() => {
@@ -36,23 +35,22 @@
 </script>
 
 <main>
-    <div class="carrousel" aria-label="Carousel">
+    <div class="carrousel" aria-label="Swap Your Plant Cuttings Carousel" role="region" aria-live="polite">
         <div class="overlay"></div>
 
-        <h1>Swap nu je stekjes!</h1>
+        <header>
+            <h1>Swap nu je stekjes!</h1>
+        </header>
 
         <ButtonGelijkSwappen/>
         <div class="carrousel-a">
-            <div class="carrousel-picture"><img src={image1} alt="Slide 1"
-                                                aria-label="carousel-image-1"></div>
-            <div class="carrousel-picture"><img src={image2} loading=”lazy” alt="Slide 2"
-                                                aria-label="carousel-image-2"></div>
-            <div class="carrousel-picture"><img src={image3} loading=”lazy” alt="Slide 3"
-                                                aria-label="carousel-image-3"></div>
-
-
+            <div class="carrousel-picture"><img src={image1} alt="slide-1-image-off-plants"
+                                                aria-label="foto-van-stekjes-in-potten"></div>
+            <div class="carrousel-picture"><img src={image2} loading="lazy" alt="slide-1-image-off-plants"
+                                                aria-label="foto-van-stekjes-in-potten"></div>
+            <div class="carrousel-picture"><img src={image3} loading="lazy" alt="slide-1-image-off-plants"
+                                                aria-label="foto-van-potten-van-een-stekje"></div>
         </div>
-
     </div>
 </main>
 
@@ -129,7 +127,6 @@
             left: 25%;
             font-size: 3rem;
         }
-
     }
 
     /* MEDIA QUERY DESKTOP */
@@ -146,9 +143,10 @@
         }
         .carrousel h1 {
             width: 60%;
-            height: 100%;
+            height: 5%;
+            left: 20%;
             font-size: 9vw;
-            line-height: 7rem;
+            line-height: 10rem;
         }
     }
 </style>
