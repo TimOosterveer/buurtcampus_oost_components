@@ -10,7 +10,15 @@ For the....
 
 <h2 align="center"> 🔨Instalation guide🔨</h2>
 <br>
-For the....
+
+1. **Fork this repository.**
+
+2. **Clone it using GitHub Desktop and open it in your preferred code editor.**
+
+3. **This project utilizes a `.env` file for retrieving the API token.**
+
+4. **Finally, install the dependencies by using `npm install` in your command line.**
+
 
 
 <h2 align="center"> 🪚Languages-Frameworks-Tools🪚</h2>
