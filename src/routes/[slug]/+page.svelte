@@ -19,8 +19,6 @@
 <section class="container">
 	<div class="stekje-container">
 		<img id="one" src={VectorPlant} alt="incon plant" />
-		<img id="two" src={VectorPlant} alt="incon plant" />
-		<img id="three" src={VectorPlant} alt="incon plant" />
 		<div class="left">
 			<div class="beschrijving-tag">
 				<svg
@@ -179,29 +177,11 @@
 
 	#one {
 		position: absolute;
-		bottom: -0.8rem;
-		right: 5rem;
-		width: 200px;
-		height: 200px;
+		bottom: 0;
+		left: 5rem;
+		width: 350px;
+		height: 350px;
 	}
-
-	#two {
-		position: absolute;
-		top: 40rem;
-		left: -0.5rem;
-		width: 200px;
-		height: 200px;
-		rotate: 70deg;
-	}
-	#three {
-		position: absolute;
-		top: 5rem;
-		right: 2rem;
-		transform: rotate(-20deg);
-		width: 200px;
-		height: 200px;
-	}
-
 	.right {
 		width: 50%;
 		padding: 0;
