@@ -27,7 +27,6 @@
         right: 2rem;
         border-radius: var(--bradius);
         padding: 0.5rem 1.1rem;
-        margin-left: 2rem;
         margin-bottom: 2rem;
         font-size: 1rem;
         transition: 0.2s;
@@ -52,14 +51,12 @@
     /* MEDIA TABLET*/
     @media screen and (min-width: 48rem) {
         button {
-            margin-left: 6rem;
         }
     }
 
     /* MEDIA QUERY DESKTOP */
     @media screen and (min-width: 64rem) {
         button {
-            margin-left: 30rem;
         }
     }
 </style>

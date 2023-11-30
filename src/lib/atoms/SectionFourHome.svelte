@@ -146,13 +146,13 @@
 			margin-left: 5%;
 			width: 90%;
 			border-radius: 40px;
+			height: 90vh;
 		}
 
 		.container-text-four {
 			margin-top: 3rem;
 			padding-left: 4rem;
 			width: 40rem;
-			height: 50rem;
 		}
 
 		.flex-wrapper-recent-stekjes {

@@ -2,8 +2,7 @@
     import ButtonDeKast from "./ButtonDeKast.svelte";
 </script>
 
-<html>
-
+<section>
 <div class="container-text-three">
     <h4>Over PlantSwap</h4>
     <p>De Buurtcampus-Oost heeft als doel Amsterdam-Oost duurzamer, inclusiever en gezonder te maken. PlantSwap
@@ -12,11 +11,10 @@
         planten moeten zorgen en kopen nieuwe als ze dood gaan. In het kader van duurzaamheid, gezondheid en meer
         sociale connectie, is PlantSwap Amsterdam een plek van sociale ontmoeting, waar mensen samen leren over
         planten.</p>
+        <ButtonDeKast/>
 </div>
+</section>
 
-<ButtonDeKast/>
-
-</html>
 
 <style>
     h4 {
@@ -30,9 +28,6 @@
     }
 
     .container-text-three {
-        padding-top: 1rem;
-        padding-bottom: 3rem;
-        padding-left: 2rem;
         width: 95%;
     }
 
@@ -44,26 +39,36 @@
         }
 
         .container-text-three {
-            padding-left: 6rem;
             width: 80%;
         }
     }
 
     /* MEDIA QUERY DESKTOP */
     @media screen and (min-width: 64rem) {
-        h4 {
-            font-size: 5rem;
+        section {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 25vw;
         }
 
-        p {
-            font-size: 1.3rem;
-        }
+		h4 {
+			font-size: 5rem;
+            font-weight: 700;
+            line-height: 1em;
+		}
 
-        .container-text-three {
-            padding-left: 30rem;
-            width: 75%;
-        }
-    }
+		p {
+			font-size: 1.1rem;
+            margin-bottom: 1rem;
+		}
+
+		.container-text-three {
+			width: 100%;
+            text-align: left;
+		}
+	}
 
 
 </style>

@@ -59,7 +59,11 @@
 	}
 
 	.carrousel {
+		display: flex;
+			justify-content: center;
+			align-items: center;
 		width: 100%;
+		height: 100vh;
 	}
 
 	.overlay {
@@ -67,7 +71,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 31.6%;
+		height: 100%;
 		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
 		z-index: 1;
 	}
@@ -82,13 +86,14 @@
 		justify-content: center;
 		align-items: center;
         font-weight: 900;
-
+		line-height: 1.1em;
+		font-size: rem;
 	}
 
 	.carrousel img {
 		width: 100%;
-		height: auto;
-		aspect-ratio: 16 / 9;
+		height: 100vh;
+		/* aspect-ratio: 16 / 9; */
 		object-fit: cover;
 	}
 
@@ -136,7 +141,7 @@
 		}
 
 		.overlay {
-			height: 101.2%;
+			height: 100%;
 			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
 		}
 

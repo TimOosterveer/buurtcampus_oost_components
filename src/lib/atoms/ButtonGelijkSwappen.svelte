@@ -27,11 +27,14 @@
         font-family: var(--main-font);
         border: none;
         border-radius: var(--bradius);
-        padding: 0.5rem 1.1rem;
-        font-size: 1rem;
+        padding: 0.4rem 0.9rem .6rem .9rem;
+        font-size: .8rem;
         transition: 0.2s;
         cursor: pointer;
-        visibility: hidden;
+        /* visibility: hidden; */
+        z-index: 999;
+        left: 30%;
+        top: 60%;
     }
 
     button:hover {

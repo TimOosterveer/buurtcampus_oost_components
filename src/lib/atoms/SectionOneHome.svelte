@@ -50,7 +50,7 @@
 	/* MEDIA QUERY DESKTOP */
 	@media screen and (min-width: 64rem) {
         section {
-            height: 100vh;
+            height: 80vh;
             display: flex;
             justify-content: center;
             align-items: center;

@@ -148,7 +148,7 @@
             margin-top: 3rem;
             padding-left: 4rem;
             width: 40rem;
-            height: 50rem;
+            height: 80vh;
 
         }
 
