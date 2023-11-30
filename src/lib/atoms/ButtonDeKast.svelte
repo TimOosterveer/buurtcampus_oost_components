@@ -1,3 +1,4 @@
+<a href="/maken">
 <button>
     Bekijk de kast
 
@@ -14,7 +15,7 @@
         />
     </svg>
 </button>
-
+</a>
 
 <style>
     button {

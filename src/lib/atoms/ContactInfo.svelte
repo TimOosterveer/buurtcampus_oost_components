@@ -13,6 +13,10 @@
 
 <style>
 
+	h2{
+		font-size: 40px ;
+	}
+
 	div{
 		display: flex;
 		gap: 1rem;
@@ -21,6 +25,7 @@
 	div img{
 		height: 2rem;
 		width: auto;
+		margin-top: 1rem;
 	}
 	section {
 		width: 80%;

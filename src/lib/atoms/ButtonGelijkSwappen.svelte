@@ -1,6 +1,6 @@
 
 
-<a>
+<a href='/stekjes_overzicht'>
 <button>
     Gelijk Swappen
 
