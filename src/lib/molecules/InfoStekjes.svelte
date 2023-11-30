@@ -5,7 +5,7 @@
 
 </script>
 
-<div class="info-workshop">
+<div class="info-Stekjes">
 	<div class="vector">
 		<img src={Vector} alt="icon info tekst" />
 	</div>
@@ -21,18 +21,20 @@
 </div>
 
 <style>
-	.info-workshop {
+	.info-Stekjes {
 		position: relative;
 		display: flex;
 		gap: var(--padding);
 		background-color: var(--background-color-light);
 		border-radius: var(--bradius);
-		height: 11rem;
+		width: 24.2%;
+		height: 70vh;
 		padding: var(--padding);
 		overflow: hidden;
+		margin-top: 1rem;
 	}
 
-   .info-workshop p{
+   .info-Stekjes p{
         z-index: 10;
        
     }
@@ -59,6 +61,13 @@
 		right: -7rem;
 		transform: rotate(-10deg);
 	}
+
+	@media (max-width: 750px) {
+		.info-Stekjes{
+			width: 100%;
+		}
+}
+
 </style>
 
 

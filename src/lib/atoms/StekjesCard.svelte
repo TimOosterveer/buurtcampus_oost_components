@@ -1,9 +1,10 @@
 <script>
 	export let data;
 	console.log(data)
+	import StekjesInfo from '$lib/molecules/infoStekjes.svelte'
 </script>
 
-
+<StekjesInfo/>
 {#each data.stekjes as stekje}
 	<article class={stekje.categories.naam}>
 		<img src={stekje.fotos[0].url} alt="" />
@@ -69,4 +70,10 @@
 		background-color: rgba(0, 0, 0, 0.199);
 		z-index: 1;
 	}
+
+	@media (max-width: 750px) {
+		article{
+			width: 100%;
+		}
+}
 </style>
