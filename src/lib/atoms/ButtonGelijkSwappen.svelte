@@ -64,10 +64,10 @@
     }
 
     /* MEDIA QUERY DESKTOP */
-    @media screen and (min-width: 64rem) {
+    /* @media screen and (min-width: 64rem) {
         button {
             padding: 0.3rem .8rem;
         }
-    }
+    } */
 
 </style>
