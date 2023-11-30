@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="34775548-75e7-4f2a-9575-0605f17cfa5a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/atoms/ButtonDeKast.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/ButtonDeKast.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/atoms/ButtonGelijkSwappen.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/ButtonGelijkSwappen.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/atoms/ButtonLocation.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/ButtonLocation.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +78,8 @@
       <workItem from="1701184782910" duration="14000" />
       <workItem from="1701184807033" duration="11683000" />
       <workItem from="1701250296886" duration="7162000" />
-      <workItem from="1701334250731" duration="1399000" />
+      <workItem from="1701334250731" duration="1619000" />
+      <workItem from="1701341306626" duration="285000" />
     </task>
     <servers />
   </component>

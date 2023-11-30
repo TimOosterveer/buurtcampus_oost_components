@@ -163,7 +163,7 @@
 			margin-left: 5%;
 			width: 90%;
 			border-radius: 40px;
-			height: 90vh;
+			height: 100vh;
 		}
 
 		.container-text-four {
@@ -174,6 +174,7 @@
 
 		.flex-wrapper-recent-stekjes {
 			padding-top: 8rem;
+
 		}
 	}
 </style>

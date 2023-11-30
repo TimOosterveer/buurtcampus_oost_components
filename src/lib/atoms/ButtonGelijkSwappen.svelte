@@ -28,7 +28,7 @@
         border: none;
         border-radius: var(--bradius);
         padding: 0.4rem 0.9rem .6rem .9rem;
-        font-size: .8rem;
+        font-size: 1rem;
         transition: 0.2s;
         cursor: pointer;
         /* visibility: hidden; */
@@ -56,8 +56,8 @@
     @media screen and (min-width: 48rem) {
         button {
             visibility: visible;
-            top: 67%;
-            left: 42%;
+            top: 70%;
+            left: 45%;
             margin-top: 0.5rem;
             z-index: 2;
         }
@@ -66,7 +66,7 @@
     /* MEDIA QUERY DESKTOP */
     @media screen and (min-width: 64rem) {
         button {
-            padding: 0.4rem .7rem;
+            padding: 0.3rem .8rem;
         }
     }
 
