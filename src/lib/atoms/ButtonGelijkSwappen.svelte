@@ -55,19 +55,19 @@
     /* MEDIA TABLET*/
     @media screen and (min-width: 48rem) {
         button {
-            visibility: visible;
-            top: 70%;
-            left: 45%;
+            top: 60%;
+            left: 38%;
             margin-top: 0.5rem;
             z-index: 2;
         }
     }
 
-    /* MEDIA QUERY DESKTOP */
-    /* @media screen and (min-width: 64rem) {
+    /*MEDIA QUERY DESKTOP */
+    @media screen and (min-width: 64rem) {
         button {
-            padding: 0.3rem .8rem;
+            top: 70%;
+            left:45%;
         }
-    } */
+    }
 
 </style>

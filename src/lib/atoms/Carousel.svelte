@@ -80,7 +80,8 @@
     .carrousel h1 {
         position: absolute;
         z-index: 1;
-        width: 60%;
+        width: 80%;
+        font-size: 2rem;
         color: var(--text-color);
         display: flex;
         text-align: center;
@@ -121,14 +122,14 @@
     /* MEDIA QUERY TABLET*/
     @media screen and (min-width: 48rem) {
         .overlay {
-            height: 42.2%;
+            height: 100%;
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
         }
 
         .carrousel h1 {
-            width: 50%;
+            width: 80%;
             height: 45%;
-            font-size: 3rem;
+            font-size: 4rem;
         }
     }
 
