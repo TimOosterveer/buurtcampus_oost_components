@@ -1,8 +1,8 @@
 <script>
     import {onDestroy, onMount} from 'svelte';
-    import image1 from '$lib/assets/carousel-img-1.jpg';
-    import image2 from '$lib/assets/carousel-img-2.jpg';
-    import image3 from '$lib/assets/carousel-img-3.jpg';
+    import image1 from '$lib/assets/carousel-img-1.avif';
+    import image2 from '$lib/assets/carousel-img-2.avif';
+    import image3 from '$lib/assets/carousel-img-3.avif';
     import ButtonGelijkSwappen from './ButtonGelijkSwappen.svelte';
 
     let intervalId;

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34775548-75e7-4f2a-9575-0605f17cfa5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/atoms/Carousel.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/Carousel.svelte" afterDir="false" />
-    </list>
+    <list default="true" id="34775548-75e7-4f2a-9575-0605f17cfa5a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +77,7 @@
       <workItem from="1701250296886" duration="7162000" />
       <workItem from="1701334250731" duration="1619000" />
       <workItem from="1701341306626" duration="1877000" />
-      <workItem from="1701345661781" duration="135000" />
+      <workItem from="1701345661781" duration="507000" />
     </task>
     <servers />
   </component>
