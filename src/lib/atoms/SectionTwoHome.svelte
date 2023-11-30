@@ -1,5 +1,5 @@
 <script>
-    import Img1 from '$lib/assets/carousel-img-1.jpg'
+    import Img1 from '$lib/assets/img-planten.png'
 </script>
 
 <main>
@@ -153,10 +153,10 @@
         }
 
         img {
-            margin-top: 18rem;
+            margin-top: 7rem;
             margin-left: 10rem;
             width: 30rem;
-            height: 20rem;
+            height: 35rem;
         }
     }
 </style>
