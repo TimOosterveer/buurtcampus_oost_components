@@ -1,7 +1,7 @@
 <script>
 	export let data;
 	console.log(data)
-	import StekjesInfo from '$lib/molecules/infoStekjes.svelte'
+	import StekjesInfo from '$lib/molecules/InfoStekjes.svelte'
 </script>
 
 <StekjesInfo/>
