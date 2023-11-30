@@ -43,7 +43,9 @@
 
 		<div class="flex-wrapper-recent-stekjes">
 			{#each data.stekjes.slice(0, 4) as stekje}
+			<a href={stekje.slug}>
 				<img src={stekje.fotos[0].url} alt="foto van een stekje" width="100" />
+			</a>
 			{/each}
 		</div>
 	</div>
@@ -163,7 +165,7 @@
 			margin-left: 5%;
 			width: 90%;
 			border-radius: 40px;
-			height: 90vh;
+			height: 100vh;
 		}
 
 		.container-text-four {
@@ -174,6 +176,7 @@
 
 		.flex-wrapper-recent-stekjes {
 			padding-top: 8rem;
+			width: 50%;
 		}
 	}
 </style>
