@@ -15,7 +15,7 @@
 <HeaderStekje {data} />
 
 <main>
-	<StekjesInfo/>
+	<!-- <StekjesInfo/> -->
 	<StekjeCard {data} />
 </main>
 
