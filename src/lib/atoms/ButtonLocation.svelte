@@ -1,3 +1,4 @@
+<a href="contact">
 <button>
     Zoek locatie
 
@@ -14,7 +15,7 @@
         />
     </svg>
 </button>
-
+</a>
 
 <style>
 button {
