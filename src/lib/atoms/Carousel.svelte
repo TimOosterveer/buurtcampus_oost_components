@@ -143,9 +143,10 @@
         }
         .carrousel h1 {
             width: 60%;
-            height: 100%;
+            height: 5%;
+            left: 20%;
             font-size: 9vw;
-            line-height: 7rem;
+            line-height: 10rem;
         }
     }
 </style>
