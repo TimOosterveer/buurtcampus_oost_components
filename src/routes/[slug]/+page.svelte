@@ -4,12 +4,18 @@
 	import Footer from '$lib/organisms/Footer.svelte';
 	import MobileMenu from '$lib/organisms/MobileMenu.svelte';
 	import VectorPlant from '$lib/assets/vectorplant.svg';
-	// import HeaderStekje from '$lib/organisms/HeaderStekje.svelte';
+	import ImageStekje from '$lib/Molecules/ImageStekje.svelte';
+	import StekjeDescription from '$lib/organisms/StekjeDescription.svelte';
+
+
 </script>
 
-<!-- <HeaderStekje {data} /> -->
+
 <NavDark />
 <MobileMenu />
+
+<!-- <ImageStekje data={data} />
+<StekjeDescription data={data} /> -->
 
 <section class="image-section">
 	<img src={data.stekje.fotos[0].url} alt="foto van {data.naam}" />
@@ -105,7 +111,7 @@
 			</ul>
 		</div>
 	</div>
-</section>
+</section> 
 
 <Footer />
 
@@ -245,4 +251,5 @@
 		max-height: 400px;
 		padding: 10px 10px 20px;
 	}
+
 </style>
