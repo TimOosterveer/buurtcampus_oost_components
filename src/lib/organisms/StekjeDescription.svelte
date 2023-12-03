@@ -212,4 +212,25 @@ input[type='radio'] {
     max-height: 400px;
     padding: 10px 10px 20px;
 }
+@media screen and (max-width: 768px) {
+		.stekje-container {
+			display: grid;
+			align-content: space-evenly;
+		}
+
+		.left,
+		.right {
+			position: static;
+			height: fit-content;
+			width: 100%;
+		}
+
+		#one {
+			display: none;
+		}
+
+		.accordion {
+			margin-top: 20px;
+		}
+	}
 </style>
