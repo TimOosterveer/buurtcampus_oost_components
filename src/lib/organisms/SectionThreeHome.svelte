@@ -1,5 +1,5 @@
 <script>
-    import ButtonDeKast from "./ButtonDeKast.svelte";
+    import ButtonDeKast from "../atoms/buttons/ButtonDeKast.svelte";
 </script>
 
 <section>

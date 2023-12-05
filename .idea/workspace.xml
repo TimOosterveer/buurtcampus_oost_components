@@ -2,9 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34775548-75e7-4f2a-9575-0605f17cfa5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/atoms/ButtonGelijkSwappen.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/ButtonGelijkSwappen.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/ButtonDeKast.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonDeKast.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/ButtonGelijkSwappen.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonGelijkSwappen.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/ButtonLocation.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonLocation.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/ButtonStekje.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonStekje.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/ButtonWorkshop.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonWorkshop.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/atoms/Carousel.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/Carousel.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/ContactImage.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/images/ContactImage.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/ImageWorkshop.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/images/ImageWorkshop.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/KastImage.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/images/KastImage.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/SectionBannerHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/organisms/SectionBannerHome.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/SectionFourHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/organisms/SectionFourHome.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/SectionOneHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/organisms/SectionOneHome.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/SectionThreeHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/organisms/SectionThreeHome.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/SectionTwoHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/organisms/SectionTwoHome.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/StekjeImage.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/images/StekjeImage.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/StekjesCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/molecules/StekjesCard.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/molecules/ImageOverzicht.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/images/ImageOverzicht.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/molecules/imageStekje.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/images/imageStekje.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/organisms/IntroKast.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/molecules/IntroKast.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/organisms/StekjeDescription.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/molecules/StekjeDescription.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/contact/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contact/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/home/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/home/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +103,7 @@
       <workItem from="1701341306626" duration="1877000" />
       <workItem from="1701345661781" duration="507000" />
       <workItem from="1701366948393" duration="779000" />
+      <workItem from="1701795609035" duration="314000" />
     </task>
     <servers />
   </component>
