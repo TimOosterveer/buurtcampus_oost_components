@@ -1,5 +1,5 @@
 <script>
-	import ButtonLocation from './ButtonLocation.svelte';
+	import ButtonLocation from '../atoms/buttons/ButtonLocation.svelte';
 </script>
 
 <section>

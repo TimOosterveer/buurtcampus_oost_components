@@ -3,7 +3,7 @@
     import image1 from '$lib/assets/carousel-img-1.avif';
     import image2 from '$lib/assets/carousel-img-2.avif';
     import image3 from '$lib/assets/carousel-img-3.avif';
-    import ButtonGelijkSwappen from './ButtonGelijkSwappen.svelte';
+    import ButtonGelijkSwappen from './buttons/ButtonGelijkSwappen.svelte';
 
     let intervalId;
 

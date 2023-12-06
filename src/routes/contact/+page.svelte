@@ -5,7 +5,7 @@
 	import Footer from '$lib/organisms/Footer.svelte';
 	import Navigation from '$lib/organisms/NavDark.svelte';
 	import MobileNavigation from '$lib/organisms/MobileMenu.svelte';
-	import ContactImage from '../../lib/atoms/ContactImage.svelte';
+	import ContactImage from '../../lib/atoms/images/ContactImage.svelte';
 	import NavDark from '../../lib/organisms/NavDark.svelte';
 	import MobileMenu from '../../lib/organisms/MobileMenu.svelte';
 </script>

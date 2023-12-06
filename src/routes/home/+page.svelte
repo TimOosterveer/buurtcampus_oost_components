@@ -1,10 +1,10 @@
 <script>
     import Carousel from "../../lib/atoms/Carousel.svelte";
-    import SectionOneHome from "../../lib/atoms/SectionOneHome.svelte";
-    import SectionTwoHome from "../../lib/atoms/SectionTwoHome.svelte";
-    import SectionThreeHome from "../../lib/atoms/SectionThreeHome.svelte";
-    import SectionFourHome from "../../lib/atoms/SectionFourHome.svelte";
-    import SectionBannerHome from "../../lib/atoms/SectionBannerHome.svelte";
+    import SectionOneHome from "../../lib/organisms/SectionOneHome.svelte";
+    import SectionTwoHome from "../../lib/organisms/SectionTwoHome.svelte";
+    import SectionThreeHome from "../../lib/organisms/SectionThreeHome.svelte";
+    import SectionFourHome from "../../lib/organisms/SectionFourHome.svelte";
+    import SectionBannerHome from "../../lib/organisms/SectionBannerHome.svelte";
     export let data
 </script>
 
