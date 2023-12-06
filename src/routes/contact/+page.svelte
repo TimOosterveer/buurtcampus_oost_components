@@ -1,5 +1,5 @@
 <script>
-		export let data;
+	export let data;
 	import ContactForm from '$lib/molecules/ContactForm.svelte';
 	import Location from '$lib/atoms/Location.svelte';
 	import Footer from '$lib/organisms/Footer.svelte';

@@ -103,11 +103,10 @@ section {
 
 h2 {
     color: var(--background-color);
-    font-size: 2.7vw;
+    /* font-size: 2.7vw; */
 }
 
 .left p {
-    font-size: 1.2em;
     margin-top: 15px;
 }
 .container {
@@ -175,7 +174,7 @@ h2 {
     align-items: center;
     color: var(--background-color);
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
     padding: 7px;
     cursor: pointer;
 }
@@ -183,7 +182,7 @@ h2 {
 label::before {
     content: '+';
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 5px;
     margin-bottom: 5px;
     /* transition: transform 0.4s; */
@@ -212,12 +211,13 @@ input[type='radio'] {
     max-height: 400px;
     padding: 10px 10px 20px;
 }
+
 @media screen and (max-width: 768px) {
 		.stekje-container {
 			display: grid;
 			align-content: space-evenly;
+			padding: 1rem;
 		}
-
 		.left,
 		.right {
 			position: static;
