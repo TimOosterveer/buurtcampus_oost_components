@@ -174,7 +174,7 @@ h2 {
     align-items: center;
     color: var(--background-color);
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     padding: 7px;
     cursor: pointer;
 }
